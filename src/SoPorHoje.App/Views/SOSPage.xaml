@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:SoPorHoje.App.ViewModels"
+             xmlns:conv="clr-namespace:SoPorHoje.App.Converters"
+             x:Class="SoPorHoje.App.Views.SOSPage"
+             x:DataType="vm:SOSViewModel"
+             BackgroundColor="{StaticResource BgPrimary}"
+             Shell.NavBarIsVisible="False"
+             Title="SOS">
+
+    <ContentPage.Resources>
+        <conv:InverseBoolConverter x:Key="InverseBoolConverter" />
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="16">
+
+            <!-- Header with close button -->
+            <Grid ColumnDefinitions="*,Auto">
+                <Label Grid.Column="0"
+                       Text="Momento difícil?"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       TextColor="{StaticResource TextPrimary}"
+                       VerticalOptions="Center"
+                       SemanticProperties.HeadingLevel="Level1" />
+
+                <Button Grid.Column="1"
+                        Text="&#x2715;"
+                        BackgroundColor="Transparent"
+                        TextColor="{StaticResource TextSecondary}"
+                        FontSize="22"
+                        HeightRequest="44"
+                        WidthRequest="44"
+                        MinimumHeightRequest="44"
+                        MinimumWidthRequest="44"
+                        Command="{Binding CloseCommand}"
+                        SemanticProperties.Description="Fechar tela de ajuda" />
+            </Grid>
+
+            <Label Text="A fissura dura 15–20 minutos."
+                   TextColor="{StaticResource TextSecondary}"
+                   FontSize="15" />
+
+            <!-- Breathing section -->
+            <Border StrokeThickness="1"
+                    Stroke="{StaticResource BgBorder}"
+                    BackgroundColor="{StaticResource BgSurface}"
+                    Padding="14,16"
+                    StrokeShape="RoundRectangle 16">
+                <VerticalStackLayout Spacing="12">
+
+                    <Button Text="&#x1FAC1; Respiração Guiada"
+                            BackgroundColor="{StaticResource Accent}"
+                            TextColor="{StaticResource TextPrimary}"
+                            CornerRadius="16"
+                            HeightRequest="52"
+                            FontSize="16"
+                            MinimumHeightRequest="44"
+                            MinimumWidthRequest="44"
+                            Command="{Binding StartBreathingCommand}"
+                            IsVisible="{Binding IsBreathing, Converter={StaticResource InverseBoolConverter}}"
+                            SemanticProperties.Description="Iniciar exercício de respiração guiada" />
+
+                    <!-- Breathing active -->
+                    <VerticalStackLayout Spacing="10"
+                                         IsVisible="{Binding IsBreathing}"
+                                         HorizontalOptions="Center">
+                        <Label Text="{Binding BreathingPhase}"
+                               FontSize="22"
+                               FontAttributes="Bold"
+                               TextColor="{StaticResource TextPrimary}"
+                               HorizontalTextAlignment="Center" />
+
+                        <Label Text="{Binding BreathingCounter}"
+                               FontSize="48"
+                               FontAttributes="Bold"
+                               TextColor="{StaticResource Accent}"
+                               HorizontalTextAlignment="Center" />
+
+                        <ProgressBar Progress="{Binding BreathingProgress}"
+                                     ProgressColor="{StaticResource Accent}"
+                                     HeightRequest="8" />
+
+                        <Button Text="Parar"
+                                BackgroundColor="{StaticResource BgSurfaceLight}"
+                                TextColor="{StaticResource TextSecondary}"
+                                CornerRadius="16"
+                                HeightRequest="44"
+                                FontSize="14"
+                                MinimumHeightRequest="44"
+                                MinimumWidthRequest="44"
+                                Command="{Binding StopBreathingCommand}"
+                                SemanticProperties.Description="Parar exercício de respiração" />
+                    </VerticalStackLayout>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Coping phrases -->
+            <Border StrokeThickness="1"
+                    Stroke="{StaticResource BgBorder}"
+                    BackgroundColor="{StaticResource BgSurface}"
+                    Padding="14,16"
+                    StrokeShape="RoundRectangle 16">
+                <VerticalStackLayout Spacing="12">
+                    <Label Text="Frases de Enfrentamento"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           TextColor="{StaticResource TextPrimary}"
+                           SemanticProperties.HeadingLevel="Level2" />
+
+                    <Label Text="&#x2022; Isso vai passar. Eu já passei por isso antes."
+                           TextColor="{StaticResource TextSecondary}"
+                           FontSize="14" />
+                    <Label Text="&#x2022; Eu não preciso beber para lidar com isso."
+                           TextColor="{StaticResource TextSecondary}"
+                           FontSize="14" />
+                    <Label Text="&#x2022; Um dia de cada vez. Só por hoje."
+                           TextColor="{StaticResource TextSecondary}"
+                           FontSize="14" />
+                    <Label Text="&#x2022; Eu sou mais forte do que essa vontade."
+                           TextColor="{StaticResource TextSecondary}"
+                           FontSize="14" />
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- HALT Check -->
+            <Border StrokeThickness="1"
+                    Stroke="{StaticResource BgBorder}"
+                    BackgroundColor="{StaticResource BgSurface}"
+                    Padding="14,16"
+                    StrokeShape="RoundRectangle 16">
+                <VerticalStackLayout Spacing="12">
+                    <Label Text="Check HALT"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           TextColor="{StaticResource TextPrimary}"
+                           SemanticProperties.HeadingLevel="Level2" />
+
+                    <Grid ColumnDefinitions="*,*"
+                          RowDefinitions="Auto,Auto"
+                          ColumnSpacing="10"
+                          RowSpacing="10">
+
+                        <Border Grid.Row="0" Grid.Column="0"
+                                StrokeThickness="1"
+                                Stroke="{StaticResource BgBorder}"
+                                BackgroundColor="{StaticResource BgSurfaceLight}"
+                                Padding="12"
+                                StrokeShape="RoundRectangle 12"
+                                MinimumHeightRequest="44">
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenHaltCheckCommand}" />
+                            </Border.GestureRecognizers>
+                            <VerticalStackLayout HorizontalOptions="Center" Spacing="4">
+                                <Label Text="&#x1F34E;" FontSize="24" HorizontalTextAlignment="Center" />
+                                <Label Text="H" FontSize="18" FontAttributes="Bold"
+                                       TextColor="{StaticResource TextPrimary}" HorizontalTextAlignment="Center" />
+                            </VerticalStackLayout>
+                        </Border>
+
+                        <Border Grid.Row="0" Grid.Column="1"
+                                StrokeThickness="1"
+                                Stroke="{StaticResource BgBorder}"
+                                BackgroundColor="{StaticResource BgSurfaceLight}"
+                                Padding="12"
+                                StrokeShape="RoundRectangle 12"
+                                MinimumHeightRequest="44">
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenHaltCheckCommand}" />
+                            </Border.GestureRecognizers>
+                            <VerticalStackLayout HorizontalOptions="Center" Spacing="4">
+                                <Label Text="&#x1F624;" FontSize="24" HorizontalTextAlignment="Center" />
+                                <Label Text="A" FontSize="18" FontAttributes="Bold"
+                                       TextColor="{StaticResource TextPrimary}" HorizontalTextAlignment="Center" />
+                            </VerticalStackLayout>
+                        </Border>
+
+                        <Border Grid.Row="1" Grid.Column="0"
+                                StrokeThickness="1"
+                                Stroke="{StaticResource BgBorder}"
+                                BackgroundColor="{StaticResource BgSurfaceLight}"
+                                Padding="12"
+                                StrokeShape="RoundRectangle 12"
+                                MinimumHeightRequest="44">
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenHaltCheckCommand}" />
+                            </Border.GestureRecognizers>
+                            <VerticalStackLayout HorizontalOptions="Center" Spacing="4">
+                                <Label Text="&#x1F614;" FontSize="24" HorizontalTextAlignment="Center" />
+                                <Label Text="L" FontSize="18" FontAttributes="Bold"
+                                       TextColor="{StaticResource TextPrimary}" HorizontalTextAlignment="Center" />
+                            </VerticalStackLayout>
+                        </Border>
+
+                        <Border Grid.Row="1" Grid.Column="1"
+                                StrokeThickness="1"
+                                Stroke="{StaticResource BgBorder}"
+                                BackgroundColor="{StaticResource BgSurfaceLight}"
+                                Padding="12"
+                                StrokeShape="RoundRectangle 12"
+                                MinimumHeightRequest="44">
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenHaltCheckCommand}" />
+                            </Border.GestureRecognizers>
+                            <VerticalStackLayout HorizontalOptions="Center" Spacing="4">
+                                <Label Text="&#x1F634;" FontSize="24" HorizontalTextAlignment="Center" />
+                                <Label Text="T" FontSize="18" FontAttributes="Bold"
+                                       TextColor="{StaticResource TextPrimary}" HorizontalTextAlignment="Center" />
+                            </VerticalStackLayout>
+                        </Border>
+                    </Grid>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Call CVV -->
+            <Button Text="&#x260E;&#xFE0F; Ligar CVV — 188"
+                    BackgroundColor="{StaticResource Danger}"
+                    TextColor="{StaticResource TextPrimary}"
+                    CornerRadius="16"
+                    HeightRequest="52"
+                    FontSize="16"
+                    MinimumHeightRequest="44"
+                    MinimumWidthRequest="44"
+                    Command="{Binding CallCVVCommand}"
+                    SemanticProperties.Description="Ligar para o CVV no número 188" />
+
+            <BoxView HeightRequest="24" Color="Transparent" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

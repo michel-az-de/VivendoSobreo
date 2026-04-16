@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:SoPorHoje.App.ViewModels"
+             x:Class="SoPorHoje.App.Views.PrayersPage"
+             x:DataType="vm:PrayersViewModel"
+             BackgroundColor="{StaticResource BgPrimary}"
+             Title="Orações">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="12">
+
+            <Label Text="Orações"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="{StaticResource TextPrimary}"
+                   SemanticProperties.HeadingLevel="Level1" />
+
+            <CollectionView ItemsSource="{Binding Prayers}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="vm:PrayerItem">
+                        <Border StrokeThickness="1"
+                                Stroke="{StaticResource BgBorder}"
+                                BackgroundColor="{StaticResource BgSurface}"
+                                Padding="14,16"
+                                Margin="0,4"
+                                StrokeShape="RoundRectangle 16">
+                            <VerticalStackLayout Spacing="10">
+                                <Label Text="{Binding Name}"
+                                       FontSize="16"
+                                       FontAttributes="Bold"
+                                       TextColor="{StaticResource Warm}"
+                                       SemanticProperties.HeadingLevel="Level2" />
+                                <Label Text="{Binding Text}"
+                                       TextColor="{StaticResource TextPrimary}"
+                                       FontSize="15"
+                                       LineHeight="1.5" />
+                            </VerticalStackLayout>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <BoxView HeightRequest="16" Color="Transparent" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:SoPorHoje.App.ViewModels"
+             x:Class="SoPorHoje.App.Views.HaltCheckPage"
+             x:DataType="vm:HaltCheckViewModel"
+             BackgroundColor="{StaticResource BgPrimary}"
+             Title="Check HALT">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="16">
+
+            <Label Text="Check HALT"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="{StaticResource TextPrimary}"
+                   SemanticProperties.HeadingLevel="Level1" />
+
+            <Label Text="Quando sentir vontade de beber, pergunte-se:"
+                   TextColor="{StaticResource TextSecondary}"
+                   FontSize="15" />
+
+            <Grid ColumnDefinitions="*,*"
+                  RowDefinitions="Auto,Auto"
+                  ColumnSpacing="12"
+                  RowSpacing="12">
+
+                <!-- H - Hungry -->
+                <Border Grid.Row="0" Grid.Column="0"
+                        StrokeThickness="1"
+                        Stroke="{StaticResource BgBorder}"
+                        BackgroundColor="{StaticResource BgSurface}"
+                        Padding="14,16"
+                        StrokeShape="RoundRectangle 16"
+                        MinimumHeightRequest="44">
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ToggleItemCommand}" CommandParameter="0" />
+                    </Border.GestureRecognizers>
+                    <VerticalStackLayout Spacing="8" HorizontalOptions="Center">
+                        <Label Text="&#x1F34E;" FontSize="32" HorizontalTextAlignment="Center" />
+                        <Label Text="H"
+                               FontSize="28"
+                               FontAttributes="Bold"
+                               TextColor="{StaticResource TextPrimary}"
+                               HorizontalTextAlignment="Center" />
+                        <Label Text="Você está com fome?"
+                               TextColor="{StaticResource TextSecondary}"
+                               FontSize="12"
+                               HorizontalTextAlignment="Center" />
+                        <Label Text="Coma algo nutritivo. A fome baixa sua resistência."
+                               TextColor="{StaticResource Warm}"
+                               FontSize="11"
+                               FontAttributes="Italic"
+                               HorizontalTextAlignment="Center"
+                               IsVisible="{Binding IsHExpanded}" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- A - Angry -->
+                <Border Grid.Row="0" Grid.Column="1"
+                        StrokeThickness="1"
+                        Stroke="{StaticResource BgBorder}"
+                        BackgroundColor="{StaticResource BgSurface}"
+                        Padding="14,16"
+                        StrokeShape="RoundRectangle 16"
+                        MinimumHeightRequest="44">
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ToggleItemCommand}" CommandParameter="1" />
+                    </Border.GestureRecognizers>
+                    <VerticalStackLayout Spacing="8" HorizontalOptions="Center">
+                        <Label Text="&#x1F624;" FontSize="32" HorizontalTextAlignment="Center" />
+                        <Label Text="A"
+                               FontSize="28"
+                               FontAttributes="Bold"
+                               TextColor="{StaticResource TextPrimary}"
+                               HorizontalTextAlignment="Center" />
+                        <Label Text="Você está com raiva?"
+                               TextColor="{StaticResource TextSecondary}"
+                               FontSize="12"
+                               HorizontalTextAlignment="Center" />
+                        <Label Text="Converse com alguém. Não tome decisões com raiva."
+                               TextColor="{StaticResource Warm}"
+                               FontSize="11"
+                               FontAttributes="Italic"
+                               HorizontalTextAlignment="Center"
+                               IsVisible="{Binding IsAExpanded}" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- L - Lonely -->
+                <Border Grid.Row="1" Grid.Column="0"
+                        StrokeThickness="1"
+                        Stroke="{StaticResource BgBorder}"
+                        BackgroundColor="{StaticResource BgSurface}"
+                        Padding="14,16"
+                        StrokeShape="RoundRectangle 16"
+                        MinimumHeightRequest="44">
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ToggleItemCommand}" CommandParameter="2" />
+                    </Border.GestureRecognizers>
+                    <VerticalStackLayout Spacing="8" HorizontalOptions="Center">
+                        <Label Text="&#x1F614;" FontSize="32" HorizontalTextAlignment="Center" />
+                        <Label Text="L"
+                               FontSize="28"
+                               FontAttributes="Bold"
+                               TextColor="{StaticResource TextPrimary}"
+                               HorizontalTextAlignment="Center" />
+                        <Label Text="Você está se sentindo sozinho?"
+                               TextColor="{StaticResource TextSecondary}"
+                               FontSize="12"
+                               HorizontalTextAlignment="Center" />
+                        <Label Text="Ligue para alguém do grupo. Você não está só."
+                               TextColor="{StaticResource Warm}"
+                               FontSize="11"
+                               FontAttributes="Italic"
+                               HorizontalTextAlignment="Center"
+                               IsVisible="{Binding IsLExpanded}" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- T - Tired -->
+                <Border Grid.Row="1" Grid.Column="1"
+                        StrokeThickness="1"
+                        Stroke="{StaticResource BgBorder}"
+                        BackgroundColor="{StaticResource BgSurface}"
+                        Padding="14,16"
+                        StrokeShape="RoundRectangle 16"
+                        MinimumHeightRequest="44">
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ToggleItemCommand}" CommandParameter="3" />
+                    </Border.GestureRecognizers>
+                    <VerticalStackLayout Spacing="8" HorizontalOptions="Center">
+                        <Label Text="&#x1F634;" FontSize="32" HorizontalTextAlignment="Center" />
+                        <Label Text="T"
+                               FontSize="28"
+                               FontAttributes="Bold"
+                               TextColor="{StaticResource TextPrimary}"
+                               HorizontalTextAlignment="Center" />
+                        <Label Text="Você está cansado?"
+                               TextColor="{StaticResource TextSecondary}"
+                               FontSize="12"
+                               HorizontalTextAlignment="Center" />
+                        <Label Text="Descanse. O cansaço fragiliza sua recuperação."
+                               TextColor="{StaticResource Warm}"
+                               FontSize="11"
+                               FontAttributes="Italic"
+                               HorizontalTextAlignment="Center"
+                               IsVisible="{Binding IsTExpanded}" />
+                    </VerticalStackLayout>
+                </Border>
+
+            </Grid>
+
+            <BoxView HeightRequest="16" Color="Transparent" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

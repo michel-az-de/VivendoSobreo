@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <!-- App Dark Theme Colors -->
+    <Color x:Key="BgPrimary">#0C1219</Color>
+    <Color x:Key="BgSurface">#131D28</Color>
+    <Color x:Key="BgSurfaceLight">#192736</Color>
+    <Color x:Key="BgBorder">#1D2C3C</Color>
+    <Color x:Key="Accent">#3A8AC5</Color>
+    <Color x:Key="Warm">#D4A017</Color>
+    <Color x:Key="Danger">#C0392B</Color>
+    <Color x:Key="Success">#27AE60</Color>
+    <Color x:Key="TextPrimary">#E2E8F0</Color>
+    <Color x:Key="TextSecondary">#8A9AAE</Color>
+    <Color x:Key="TextMuted">#49596B</Color>
+
+    <!-- Legacy keys for template compatibility -->
+    <Color x:Key="Primary">#3A8AC5</Color>
+    <Color x:Key="PrimaryDark">#3A8AC5</Color>
+    <Color x:Key="PrimaryDarkText">#E2E8F0</Color>
+    <Color x:Key="Secondary">#131D28</Color>
+    <Color x:Key="SecondaryDarkText">#8A9AAE</Color>
+    <Color x:Key="Tertiary">#D4A017</Color>
+    <Color x:Key="White">#E2E8F0</Color>
+    <Color x:Key="Black">#0C1219</Color>
+    <Color x:Key="OffBlack">#0C1219</Color>
+    <Color x:Key="Gray100">#E2E8F0</Color>
+    <Color x:Key="Gray200">#8A9AAE</Color>
+    <Color x:Key="Gray300">#49596B</Color>
+    <Color x:Key="Gray400">#49596B</Color>
+    <Color x:Key="Gray500">#49596B</Color>
+    <Color x:Key="Gray600">#1D2C3C</Color>
+    <Color x:Key="Gray900">#131D28</Color>
+    <Color x:Key="Gray950">#0C1219</Color>
+    <Color x:Key="Magenta">#3A8AC5</Color>
+    <Color x:Key="MidnightBlue">#0C1219</Color>
+
+    <!-- Brushes -->
+    <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource Accent}"/>
+    <SolidColorBrush x:Key="SecondaryBrush" Color="{StaticResource BgSurface}"/>
+    <SolidColorBrush x:Key="TertiaryBrush" Color="{StaticResource Warm}"/>
+</ResourceDictionary>

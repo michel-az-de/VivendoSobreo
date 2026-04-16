@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:SoPorHoje.App.ViewModels"
+             xmlns:sys="clr-namespace:System;assembly=System.Runtime"
+             x:Class="SoPorHoje.App.Views.OnboardingPage"
+             x:DataType="vm:OnboardingViewModel"
+             BackgroundColor="{StaticResource BgPrimary}"
+             Shell.NavBarIsVisible="False">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="20"
+                             Padding="24"
+                             VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             MaximumWidthRequest="400">
+
+            <!-- Logo -->
+            <Frame CornerRadius="36"
+                   HeightRequest="72"
+                   WidthRequest="72"
+                   BackgroundColor="{StaticResource Accent}"
+                   Padding="0"
+                   HasShadow="False"
+                   HorizontalOptions="Center"
+                   SemanticProperties.Description="Logo Só Por Hoje">
+                <Label Text="&#x1F54A;&#xFE0F;"
+                       FontSize="36"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" />
+            </Frame>
+
+            <!-- Title -->
+            <Label Text="Só Por Hoje"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   TextColor="{StaticResource TextPrimary}"
+                   HorizontalTextAlignment="Center"
+                   SemanticProperties.HeadingLevel="Level1" />
+
+            <!-- Subtitle -->
+            <Label Text="Seu companheiro na jornada de sobriedade"
+                   TextColor="{StaticResource TextSecondary}"
+                   HorizontalTextAlignment="Center"
+                   FontSize="16" />
+
+            <!-- Spacer -->
+            <BoxView HeightRequest="20" Color="Transparent" />
+
+            <!-- Date label -->
+            <Label Text="QUANDO FOI SEU ÚLTIMO GOLE?"
+                   FontSize="12"
+                   TextColor="{StaticResource TextSecondary}"
+                   CharacterSpacing="2"
+                   HorizontalTextAlignment="Center" />
+
+            <!-- DatePicker -->
+            <DatePicker Date="{Binding SelectedDate}"
+                        MaximumDate="{x:Static sys:DateTime.Today}"
+                        TextColor="{StaticResource TextPrimary}"
+                        HorizontalOptions="Center"
+                        MinimumHeightRequest="44"
+                        />
+
+            <!-- Privacy note -->
+            <Label Text="Seus dados ficam apenas neste dispositivo."
+                   FontSize="11"
+                   TextColor="{StaticResource TextMuted}"
+                   HorizontalTextAlignment="Center" />
+
+            <!-- Start button -->
+            <Button Text="Começar"
+                    BackgroundColor="{StaticResource Accent}"
+                    TextColor="{StaticResource TextPrimary}"
+                    Command="{Binding StartCommand}"
+                    IsEnabled="{Binding IsDateSelected}"
+                    CornerRadius="16"
+                    HeightRequest="52"
+                    FontSize="16"
+                    MinimumHeightRequest="44"
+                    MinimumWidthRequest="44"
+                    SemanticProperties.Description="Começar jornada de sobriedade" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

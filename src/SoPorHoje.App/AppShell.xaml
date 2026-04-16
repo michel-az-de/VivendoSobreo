@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="SoPorHoje.App.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:SoPorHoje.App.Views"
+    Title="Só Por Hoje"
+    Shell.BackgroundColor="#0C1219"
+    Shell.ForegroundColor="#E2E8F0"
+    Shell.TitleColor="#E2E8F0"
+    Shell.TabBarBackgroundColor="#0C1219"
+    Shell.TabBarForegroundColor="#3A8AC5"
+    Shell.TabBarTitleColor="#3A8AC5"
+    Shell.TabBarUnselectedColor="#49596B"
+    Shell.NavBarHasShadow="False">
+
+    <TabBar x:Name="MainTabs">
+        <ShellContent
+            Title="Hoje"
+            ContentTemplate="{DataTemplate views:HomePage}"
+            Route="home" />
+        <ShellContent
+            Title="Fichas"
+            ContentTemplate="{DataTemplate views:ChipsPage}"
+            Route="chips" />
+        <ShellContent
+            Title="Reuniões"
+            ContentTemplate="{DataTemplate views:MeetingsPage}"
+            Route="meetings" />
+        <ShellContent
+            Title="Programa"
+            ContentTemplate="{DataTemplate views:ProgramPage}"
+            Route="program" />
+    </TabBar>
+
+</Shell>

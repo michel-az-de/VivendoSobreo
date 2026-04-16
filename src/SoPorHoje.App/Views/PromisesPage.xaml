@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:SoPorHoje.App.ViewModels"
+             x:Class="SoPorHoje.App.Views.PromisesPage"
+             x:DataType="vm:PromisesViewModel"
+             BackgroundColor="{StaticResource BgPrimary}"
+             Title="Promessas">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="12">
+
+            <Label Text="As Promessas"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="{StaticResource TextPrimary}"
+                   SemanticProperties.HeadingLevel="Level1" />
+
+            <Label Text="Se nos empenharmos nesta fase de nosso desenvolvimento, ficaremos admirados antes de chegar à metade do caminho."
+                   TextColor="{StaticResource TextSecondary}"
+                   FontSize="14"
+                   FontAttributes="Italic" />
+
+            <CollectionView ItemsSource="{Binding Promises}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="vm:PromiseItem">
+                        <Border StrokeThickness="1"
+                                Stroke="{StaticResource BgBorder}"
+                                BackgroundColor="{StaticResource BgSurface}"
+                                Padding="0"
+                                Margin="0,4"
+                                StrokeShape="RoundRectangle 16">
+                            <HorizontalStackLayout Spacing="0">
+                                <!-- Golden left border -->
+                                <BoxView WidthRequest="3"
+                                         Color="{StaticResource Warm}"
+                                         VerticalOptions="Fill" />
+                                <Label Text="{Binding Text}"
+                                       TextColor="{StaticResource TextPrimary}"
+                                       FontSize="15"
+                                       Padding="14,16"
+                                       VerticalOptions="Center" />
+                            </HorizontalStackLayout>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <BoxView HeightRequest="16" Color="Transparent" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

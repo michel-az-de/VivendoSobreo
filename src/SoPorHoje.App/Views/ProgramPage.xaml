@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:SoPorHoje.App.ViewModels"
+             x:Class="SoPorHoje.App.Views.ProgramPage"
+             x:DataType="vm:ProgramViewModel"
+             BackgroundColor="{StaticResource BgPrimary}"
+             Title="Programa">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="12">
+
+            <Label Text="Programa"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="{StaticResource TextPrimary}"
+                   SemanticProperties.HeadingLevel="Level1" />
+
+            <!-- 12 Steps -->
+            <Border StrokeThickness="1"
+                    Stroke="{StaticResource BgBorder}"
+                    BackgroundColor="{StaticResource BgSurface}"
+                    Padding="14,16"
+                    StrokeShape="RoundRectangle 16"
+                    MinimumHeightRequest="44">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding GoToStepsCommand}" />
+                </Border.GestureRecognizers>
+                <HorizontalStackLayout Spacing="12" VerticalOptions="Center">
+                    <Label Text="&#x1F4D6;" FontSize="28" VerticalOptions="Center" />
+                    <VerticalStackLayout VerticalOptions="Center">
+                        <Label Text="12 Passos"
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               TextColor="{StaticResource TextPrimary}" />
+                        <Label Text="Os passos da recuperação"
+                               FontSize="13"
+                               TextColor="{StaticResource TextSecondary}" />
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </Border>
+
+            <!-- 12 Traditions -->
+            <Border StrokeThickness="1"
+                    Stroke="{StaticResource BgBorder}"
+                    BackgroundColor="{StaticResource BgSurface}"
+                    Padding="14,16"
+                    StrokeShape="RoundRectangle 16"
+                    MinimumHeightRequest="44">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding GoToTraditionsCommand}" />
+                </Border.GestureRecognizers>
+                <HorizontalStackLayout Spacing="12" VerticalOptions="Center">
+                    <Label Text="&#x1F4DC;" FontSize="28" VerticalOptions="Center" />
+                    <VerticalStackLayout VerticalOptions="Center">
+                        <Label Text="12 Tradições"
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               TextColor="{StaticResource TextPrimary}" />
+                        <Label Text="As tradições da irmandade"
+                               FontSize="13"
+                               TextColor="{StaticResource TextSecondary}" />
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </Border>
+
+            <!-- Promises -->
+            <Border StrokeThickness="1"
+                    Stroke="{StaticResource BgBorder}"
+                    BackgroundColor="{StaticResource BgSurface}"
+                    Padding="14,16"
+                    StrokeShape="RoundRectangle 16"
+                    MinimumHeightRequest="44">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding GoToPromisesCommand}" />
+                </Border.GestureRecognizers>
+                <HorizontalStackLayout Spacing="12" VerticalOptions="Center">
+                    <Label Text="&#x1F31F;" FontSize="28" VerticalOptions="Center" />
+                    <VerticalStackLayout VerticalOptions="Center">
+                        <Label Text="Promessas"
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               TextColor="{StaticResource TextPrimary}" />
+                        <Label Text="As promessas de A.A."
+                               FontSize="13"
+                               TextColor="{StaticResource TextSecondary}" />
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </Border>
+
+            <!-- Just For Today -->
+            <Border StrokeThickness="1"
+                    Stroke="{StaticResource BgBorder}"
+                    BackgroundColor="{StaticResource BgSurface}"
+                    Padding="14,16"
+                    StrokeShape="RoundRectangle 16"
+                    MinimumHeightRequest="44">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding GoToJustForTodayCommand}" />
+                </Border.GestureRecognizers>
+                <HorizontalStackLayout Spacing="12" VerticalOptions="Center">
+                    <Label Text="&#x1F305;" FontSize="28" VerticalOptions="Center" />
+                    <VerticalStackLayout VerticalOptions="Center">
+                        <Label Text="Só Por Hoje"
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               TextColor="{StaticResource TextPrimary}" />
+                        <Label Text="Meditações diárias"
+                               FontSize="13"
+                               TextColor="{StaticResource TextSecondary}" />
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </Border>
+
+            <!-- Prayers -->
+            <Border StrokeThickness="1"
+                    Stroke="{StaticResource BgBorder}"
+                    BackgroundColor="{StaticResource BgSurface}"
+                    Padding="14,16"
+                    StrokeShape="RoundRectangle 16"
+                    MinimumHeightRequest="44">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding GoToPrayersCommand}" />
+                </Border.GestureRecognizers>
+                <HorizontalStackLayout Spacing="12" VerticalOptions="Center">
+                    <Label Text="&#x1F64F;" FontSize="28" VerticalOptions="Center" />
+                    <VerticalStackLayout VerticalOptions="Center">
+                        <Label Text="Orações"
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               TextColor="{StaticResource TextPrimary}" />
+                        <Label Text="Orações do programa"
+                               FontSize="13"
+                               TextColor="{StaticResource TextSecondary}" />
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </Border>
+
+            <!-- HALT Check -->
+            <Border StrokeThickness="1"
+                    Stroke="{StaticResource BgBorder}"
+                    BackgroundColor="{StaticResource BgSurface}"
+                    Padding="14,16"
+                    StrokeShape="RoundRectangle 16"
+                    MinimumHeightRequest="44">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding GoToHaltCheckCommand}" />
+                </Border.GestureRecognizers>
+                <HorizontalStackLayout Spacing="12" VerticalOptions="Center">
+                    <Label Text="&#x1F6A6;" FontSize="28" VerticalOptions="Center" />
+                    <VerticalStackLayout VerticalOptions="Center">
+                        <Label Text="Check HALT"
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               TextColor="{StaticResource TextPrimary}" />
+                        <Label Text="Fome, Raiva, Solidão, Cansaço"
+                               FontSize="13"
+                               TextColor="{StaticResource TextSecondary}" />
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </Border>
+
+            <BoxView HeightRequest="16" Color="Transparent" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
