@@ -240,6 +240,12 @@ public partial class HomeViewModel : BaseViewModel
     }
 
     [RelayCommand]
+    private async Task GoToLiteratureAsync()
+    {
+        await Shell.Current.GoToAsync("literature");
+    }
+
+    [RelayCommand]
     private async Task JoinLiveMeetingAsync()
     {
         if (!string.IsNullOrEmpty(_liveMeetingUrl))

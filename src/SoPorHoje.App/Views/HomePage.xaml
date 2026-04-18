@@ -311,7 +311,25 @@
                 </VerticalStackLayout>
             </Border>
 
-            <!-- h) Footer -->
+            <!-- h) Literatura rápida -->
+            <Border Stroke="#1D2C3C" StrokeThickness="1"
+                    BackgroundColor="#131D28" Padding="14"
+                    Margin="16,0,16,10"
+                    StrokeShape="RoundRectangle 14,14,14,14">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding GoToLiteratureCommand}" />
+                </Border.GestureRecognizers>
+                <HorizontalStackLayout Spacing="12" VerticalOptions="Center">
+                    <Label Text="&#x1F4DA;" FontSize="22" VerticalOptions="Center" />
+                    <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                        <Label Text="Literaturas" FontSize="15" FontAttributes="Bold" TextColor="#E2E8F0" />
+                        <Label Text="Sorteio de textos do programa" FontSize="12" TextColor="#8A9AAE" />
+                    </VerticalStackLayout>
+                    <Label Text="&#x276F;" FontSize="16" TextColor="#49596B" VerticalOptions="Center" />
+                </HorizontalStackLayout>
+            </Border>
+
+            <!-- i) Footer -->
             <Label Text="EVITE O PRIMEIRO GOLE"
                    FontSize="11" TextColor="#49596B"
                    HorizontalTextAlignment="Center"

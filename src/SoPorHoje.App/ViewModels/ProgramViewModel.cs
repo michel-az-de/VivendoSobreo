@@ -48,6 +48,13 @@ public partial class ProgramViewModel : BaseViewModel
     [RelayCommand]
     private async Task GoToLiteratureAsync()
     {
-        await Shell.Current.GoToAsync("literature");
+        try
+        {
+            await Shell.Current.GoToAsync("literature");
+        }
+        catch (Exception ex)
+        {
+            System.Diagnostics.Debug.WriteLine($"Navigation to literature failed: {ex.Message}");
+        }
     }
 }
