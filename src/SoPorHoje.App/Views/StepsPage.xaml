@@ -4,70 +4,59 @@
              xmlns:vm="clr-namespace:SoPorHoje.App.ViewModels"
              x:Class="SoPorHoje.App.Views.StepsPage"
              x:DataType="vm:StepsViewModel"
-             BackgroundColor="{StaticResource BgPrimary}"
+             BackgroundColor="#0C1219"
              Title="12 Passos">
 
     <ScrollView>
-        <VerticalStackLayout Padding="16" Spacing="12">
+        <VerticalStackLayout Padding="0,8,0,24" Spacing="0">
 
             <Label Text="Os 12 Passos"
-                   FontSize="24"
-                   FontAttributes="Bold"
-                   TextColor="{StaticResource TextPrimary}"
-                   SemanticProperties.HeadingLevel="Level1" />
+                   FontSize="22" FontAttributes="Bold"
+                   TextColor="#E2E8F0"
+                   Margin="16,8,16,12" />
 
             <CollectionView ItemsSource="{Binding Steps}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="vm:StepItem">
-                        <Border StrokeThickness="1"
-                                Stroke="{StaticResource BgBorder}"
-                                BackgroundColor="{StaticResource BgSurface}"
-                                Padding="14,16"
-                                Margin="0,4"
-                                StrokeShape="RoundRectangle 16"
-                                MinimumHeightRequest="44">
+                        <Border Stroke="#1D2C3C" StrokeThickness="1"
+                                BackgroundColor="#131D28"
+                                Padding="14"
+                                Margin="16,0,16,8"
+                                StrokeShape="RoundRectangle 16,16,16,16">
                             <Border.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type vm:StepsViewModel}}, Path=ToggleStepCommand}"
                                                       CommandParameter="{Binding .}" />
                             </Border.GestureRecognizers>
                             <VerticalStackLayout Spacing="8">
                                 <HorizontalStackLayout Spacing="12">
-                                    <!-- Number circle -->
-                                    <Frame WidthRequest="36"
-                                           HeightRequest="36"
-                                           CornerRadius="18"
-                                           BackgroundColor="{StaticResource Accent}"
-                                           Padding="0"
-                                           HasShadow="False"
+                                    <Frame WidthRequest="32" HeightRequest="32"
+                                           CornerRadius="16"
+                                           BackgroundColor="#3A8AC5"
+                                           Padding="0" HasShadow="False"
                                            VerticalOptions="Center">
                                         <Label Text="{Binding Number}"
-                                               FontSize="16"
-                                               FontAttributes="Bold"
-                                               TextColor="{StaticResource TextPrimary}"
+                                               FontSize="14" FontAttributes="Bold"
+                                               TextColor="White"
                                                HorizontalOptions="Center"
                                                VerticalOptions="Center" />
                                     </Frame>
                                     <Label Text="{Binding Title}"
-                                           FontSize="16"
-                                           FontAttributes="Bold"
-                                           TextColor="{StaticResource TextPrimary}"
+                                           FontSize="15" FontAttributes="Bold"
+                                           TextColor="#E2E8F0"
                                            VerticalOptions="Center" />
                                 </HorizontalStackLayout>
 
-                                <!-- Expanded text -->
                                 <Label Text="{Binding Text}"
                                        FontAttributes="Italic"
-                                       TextColor="{StaticResource TextSecondary}"
-                                       FontSize="14"
+                                       TextColor="#8A9AAE" FontSize="14"
                                        IsVisible="{Binding IsExpanded}"
-                                       Margin="48,0,0,0" />
+                                       LineHeight="1.4"
+                                       Margin="44,0,0,0" />
                             </VerticalStackLayout>
                         </Border>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-
-            <BoxView HeightRequest="16" Color="Transparent" />
 
         </VerticalStackLayout>
     </ScrollView>

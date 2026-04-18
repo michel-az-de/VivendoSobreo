@@ -5,7 +5,7 @@
              xmlns:sys="clr-namespace:System;assembly=System.Runtime"
              x:Class="SoPorHoje.App.Views.OnboardingPage"
              x:DataType="vm:OnboardingViewModel"
-             BackgroundColor="{StaticResource BgPrimary}"
+             BackgroundColor="#0C1219"
              Shell.NavBarIsVisible="False">
 
     <ScrollView>
@@ -13,17 +13,14 @@
                              Padding="24"
                              VerticalOptions="Center"
                              HorizontalOptions="Center"
-                             MaximumWidthRequest="400">
+                             MaximumWidthRequest="360">
 
             <!-- Logo -->
             <Frame CornerRadius="36"
-                   HeightRequest="72"
-                   WidthRequest="72"
-                   BackgroundColor="{StaticResource Accent}"
-                   Padding="0"
-                   HasShadow="False"
-                   HorizontalOptions="Center"
-                   SemanticProperties.Description="Logo Só Por Hoje">
+                   HeightRequest="72" WidthRequest="72"
+                   BackgroundColor="#3A8AC5"
+                   Padding="0" HasShadow="False"
+                   HorizontalOptions="Center">
                 <Label Text="&#x1F54A;&#xFE0F;"
                        FontSize="36"
                        HorizontalOptions="Center"
@@ -32,54 +29,42 @@
 
             <!-- Title -->
             <Label Text="Só Por Hoje"
-                   FontSize="28"
-                   FontAttributes="Bold"
-                   TextColor="{StaticResource TextPrimary}"
-                   HorizontalTextAlignment="Center"
-                   SemanticProperties.HeadingLevel="Level1" />
+                   FontSize="28" FontAttributes="Bold"
+                   TextColor="#E2E8F0"
+                   HorizontalTextAlignment="Center" />
 
             <!-- Subtitle -->
             <Label Text="Seu companheiro na jornada de sobriedade"
-                   TextColor="{StaticResource TextSecondary}"
+                   TextColor="#8A9AAE"
                    HorizontalTextAlignment="Center"
-                   FontSize="16" />
+                   FontSize="15" />
 
-            <!-- Spacer -->
             <BoxView HeightRequest="20" Color="Transparent" />
 
             <!-- Date label -->
             <Label Text="QUANDO FOI SEU ÚLTIMO GOLE?"
-                   FontSize="12"
-                   TextColor="{StaticResource TextSecondary}"
+                   FontSize="11" TextColor="#8A9AAE"
                    CharacterSpacing="2"
                    HorizontalTextAlignment="Center" />
 
             <!-- DatePicker -->
             <DatePicker Date="{Binding SelectedDate}"
                         MaximumDate="{x:Static sys:DateTime.Today}"
-                        TextColor="{StaticResource TextPrimary}"
-                        HorizontalOptions="Center"
-                        MinimumHeightRequest="44"
-                        />
+                        TextColor="#E2E8F0"
+                        HorizontalOptions="Center" />
 
             <!-- Privacy note -->
             <Label Text="Seus dados ficam apenas neste dispositivo."
-                   FontSize="11"
-                   TextColor="{StaticResource TextMuted}"
+                   FontSize="11" TextColor="#49596B"
                    HorizontalTextAlignment="Center" />
 
             <!-- Start button -->
             <Button Text="Começar"
-                    BackgroundColor="{StaticResource Accent}"
-                    TextColor="{StaticResource TextPrimary}"
+                    BackgroundColor="#3A8AC5" TextColor="White"
                     Command="{Binding StartCommand}"
                     IsEnabled="{Binding IsDateSelected}"
-                    CornerRadius="16"
-                    HeightRequest="52"
-                    FontSize="16"
-                    MinimumHeightRequest="44"
-                    MinimumWidthRequest="44"
-                    SemanticProperties.Description="Começar jornada de sobriedade" />
+                    CornerRadius="14" HeightRequest="48"
+                    FontSize="16" FontAttributes="Bold" />
 
         </VerticalStackLayout>
     </ScrollView>

@@ -95,6 +95,9 @@ public partial class HomeViewModel : BaseViewModel
     [ObservableProperty]
     private string _serenityPrayer = AAContent.Prayers[0].Text;
 
+    [ObservableProperty]
+    private string _liveMeetingEndTime = "";
+
     // --- Live meeting URL for join command ---
     private string _liveMeetingUrl = "";
 
@@ -146,12 +149,12 @@ public partial class HomeViewModel : BaseViewModel
             HasPledgedToday = pledge is not null;
 
             // Reflection
-            var dateKey = DateTime.Now.ToString("MM-dd", CultureInfo.InvariantCulture);
-            var reflection = await _databaseService.GetReflectionAsync(dateKey);
+            var dayOfYear = DateTime.Now.DayOfYear;
+            var reflection = await _databaseService.GetReflectionAsync(dayOfYear);
             if (reflection is not null)
             {
-                ReflectionTitle = reflection.Title;
-                ReflectionQuote = reflection.Quote;
+                ReflectionTitle = reflection.Title.Trim('\u201C', '\u201D', '\u201E', '"', '"', ' ');
+                ReflectionQuote = $"\u201C{reflection.Quote.Trim('\u201C', '\u201D', '\u201E', '"', '"', ' ')}\u201D";
                 ReflectionText = reflection.Text;
                 ReflectionReference = reflection.Reference;
             }
@@ -180,6 +183,7 @@ public partial class HomeViewModel : BaseViewModel
         if (liveMeeting is not null)
         {
             LiveMeetingName = liveMeeting.GroupName;
+            LiveMeetingEndTime = liveMeeting.EndTime.ToString(@"hh\:mm");
             _liveMeetingUrl = liveMeeting.MeetingUrl;
         }
 
@@ -240,7 +244,14 @@ public partial class HomeViewModel : BaseViewModel
     {
         if (!string.IsNullOrEmpty(_liveMeetingUrl))
         {
-            await Launcher.OpenAsync(new Uri(_liveMeetingUrl));
+            try
+            {
+                await Launcher.OpenAsync(new Uri(_liveMeetingUrl));
+            }
+            catch (Exception)
+            {
+                await Shell.Current.DisplayAlert("Erro", "Não foi possível abrir o link da reunião.", "OK");
+            }
         }
     }
 

@@ -4,49 +4,43 @@
              xmlns:vm="clr-namespace:SoPorHoje.App.ViewModels"
              x:Class="SoPorHoje.App.Views.PromisesPage"
              x:DataType="vm:PromisesViewModel"
-             BackgroundColor="{StaticResource BgPrimary}"
+             BackgroundColor="#0C1219"
              Title="Promessas">
 
     <ScrollView>
-        <VerticalStackLayout Padding="16" Spacing="12">
+        <VerticalStackLayout Padding="0,8,0,24" Spacing="0">
 
             <Label Text="As Promessas"
-                   FontSize="24"
-                   FontAttributes="Bold"
-                   TextColor="{StaticResource TextPrimary}"
-                   SemanticProperties.HeadingLevel="Level1" />
+                   FontSize="22" FontAttributes="Bold"
+                   TextColor="#E2E8F0"
+                   Margin="16,8,16,4" />
 
             <Label Text="Se nos empenharmos nesta fase de nosso desenvolvimento, ficaremos admirados antes de chegar à metade do caminho."
-                   TextColor="{StaticResource TextSecondary}"
-                   FontSize="14"
-                   FontAttributes="Italic" />
+                   TextColor="#8A9AAE" FontSize="13"
+                   FontAttributes="Italic"
+                   Margin="16,0,16,12"
+                   LineHeight="1.4" />
 
             <CollectionView ItemsSource="{Binding Promises}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="vm:PromiseItem">
-                        <Border StrokeThickness="1"
-                                Stroke="{StaticResource BgBorder}"
-                                BackgroundColor="{StaticResource BgSurface}"
+                        <Border Stroke="#1D2C3C" StrokeThickness="1"
+                                BackgroundColor="#131D28"
                                 Padding="0"
-                                Margin="0,4"
-                                StrokeShape="RoundRectangle 16">
+                                Margin="16,0,16,8"
+                                StrokeShape="RoundRectangle 16,16,16,16">
                             <HorizontalStackLayout Spacing="0">
-                                <!-- Golden left border -->
-                                <BoxView WidthRequest="3"
-                                         Color="{StaticResource Warm}"
-                                         VerticalOptions="Fill" />
+                                <BoxView WidthRequest="3" Color="#D4A017" VerticalOptions="Fill" />
                                 <Label Text="{Binding Text}"
-                                       TextColor="{StaticResource TextPrimary}"
-                                       FontSize="15"
-                                       Padding="14,16"
+                                       TextColor="#E2E8F0" FontSize="14"
+                                       Padding="14,14"
+                                       LineHeight="1.4"
                                        VerticalOptions="Center" />
                             </HorizontalStackLayout>
                         </Border>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-
-            <BoxView HeightRequest="16" Color="Transparent" />
 
         </VerticalStackLayout>
     </ScrollView>

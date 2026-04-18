@@ -1,0 +1,3133 @@
+{
+  "fonte": "https://www.aa.org.br/virtual/",
+  "reunioes": [
+    {
+      "nome_grupo": "AA é Renascer",
+      "dia_semana": "Domingo",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "22:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/fup-qnzu-gph"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Agronômica SC",
+      "dia_semana": "Domingo",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "18:00",
+          "horario_fim": "19:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/cou-gjxh-nqs"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "As mãos de AA",
+      "dia_semana": "Domingo",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "22:00",
+          "horario_fim": "23:59",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/nms-pybg-jxd"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Boa Vontade",
+      "dia_semana": "Domingo",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "07:00",
+          "horario_fim": "09:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/wip-mjfw-ejy"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Esperança 29",
+      "dia_semana": "Domingo",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "07:00",
+          "horario_fim": "09:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/uuq-phfb-idv"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Funciona",
+      "dia_semana": "Domingo",
+      "localizacao": "",
+      "observacoes": "Especial para Novatos",
+      "sessoes": [
+        {
+          "horario_inicio": "09:00",
+          "horario_fim": "11:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/mrx-ooyn-qbr"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Há uma solução",
+      "dia_semana": "Domingo",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "08:00",
+          "horario_fim": "10:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/xyd-wngp-jzz"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Liberdade Online de A.A.",
+      "dia_semana": "Domingo",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "20:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/dje-oant-snb"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Novo Horizonte",
+      "dia_semana": "Domingo",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "20:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/myr-zqjx-ixc"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Pit Stop da Sobriedade",
+      "dia_semana": "Domingo",
+      "localizacao": "",
+      "observacoes": "Temáticas",
+      "sessoes": [
+        {
+          "horario_inicio": "09:00",
+          "horario_fim": "11:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/tse-shbn-nzv"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Primeiro Passo",
+      "dia_semana": "Domingo",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "16:00",
+          "horario_fim": "17:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/xwo-cyph-qhf"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "São Judas",
+      "dia_semana": "Domingo",
+      "localizacao": "",
+      "observacoes": "Somente para Mulheres",
+      "sessoes": [
+        {
+          "horario_inicio": "15:00",
+          "horario_fim": "17:00",
+          "tipo": "Fechada",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/86445484192?pwd=Mi83ei91Y1k5UkJkRlplWVZTVWZzZz09"
+        },
+        {
+          "horario_inicio": "18:00",
+          "horario_fim": "20:00",
+          "tipo": "Fechada",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/86445484192?pwd=Mi83ei91Y1k5UkJkRlplWVZTVWZzZz09"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Só Por Hoje RS",
+      "dia_semana": "Domingo",
+      "localizacao": "",
+      "observacoes": "Revista Vivência",
+      "sessoes": [
+        {
+          "horario_inicio": "17:00",
+          "horario_fim": "19:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/itg-mqvw-kxt"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Velejar de AA",
+      "dia_semana": "Domingo",
+      "localizacao": "",
+      "observacoes": "Literatura Geral",
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "21:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/dah-mndv-mxf"
+        },
+        {
+          "horario_inicio": "22:00",
+          "horario_fim": "23:59",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/dah-mndv-mxf"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "mAAis Propósito LGBT",
+      "dia_semana": "Domingo",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "20:30",
+          "tipo": "Fechada",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/89263475532"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "AA é Renascer",
+      "dia_semana": "Segunda-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "21:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/fup-qnzu-gph"
+        },
+        {
+          "horario_inicio": "21:00",
+          "horario_fim": "22:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/fup-qnzu-gph"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Acolhimento",
+      "dia_semana": "Segunda-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "07:00",
+          "horario_fim": "09:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/jsx-ajsp-cnb"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Agronômica SC",
+      "dia_semana": "Segunda-feira",
+      "localizacao": "",
+      "observacoes": "Estudo do 11° Passo",
+      "sessoes": [
+        {
+          "horario_inicio": "07:00",
+          "horario_fim": "08:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/cou-gjxh-nqs"
+        },
+        {
+          "horario_inicio": "18:00",
+          "horario_fim": "19:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/cou-gjxh-nqs"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "As mãos de AA",
+      "dia_semana": "Segunda-feira",
+      "localizacao": "",
+      "observacoes": "Especial para Novatos",
+      "sessoes": [
+        {
+          "horario_inicio": "22:00",
+          "horario_fim": "23:59",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/nms-pybg-jxd"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Esperança 29",
+      "dia_semana": "Segunda-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "07:00",
+          "horario_fim": "09:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/uuq-phfb-idv"
+        },
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "21:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/uuq-phfb-idv"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Funciona",
+      "dia_semana": "Segunda-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "09:00",
+          "horario_fim": "11:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/mrx-ooyn-qbr"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Ipanema RJ",
+      "dia_semana": "Segunda-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "20:30",
+          "tipo": "Fechada",
+          "aplicativo": "Zoom",
+          "url": "https://us06web.zoom.us/j/87125801163?pwd=CoVZBpBNXNf8aOyZrZfhBHbXbaqt4w.1"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Liberdade Online de A.A.",
+      "dia_semana": "Segunda-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "10:30",
+          "horario_fim": "12:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/dje-oant-snb"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Novo Horizonte",
+      "dia_semana": "Segunda-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "20:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/myr-zqjx-ixc"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Primeiro Passo",
+      "dia_semana": "Segunda-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "16:00",
+          "horario_fim": "17:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/xwo-cyph-qhf"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Sober Space",
+      "dia_semana": "Segunda-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "13:30",
+          "horario_fim": "15:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/tat-cxzc-smx"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Sobriedade",
+      "dia_semana": "Segunda-feira",
+      "localizacao": "",
+      "observacoes": "Revista Vivência",
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "21:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/obe-cpqk-esv"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "São Judas",
+      "dia_semana": "Segunda-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "22:00",
+          "tipo": "Fechada",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/86445484192?pwd=Mi83ei91Y1k5UkJkRlplWVZTVWZzZz09"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Só Por Hoje RS",
+      "dia_semana": "Segunda-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "17:00",
+          "horario_fim": "19:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/itg-mqvw-kxt"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Tabapuã",
+      "dia_semana": "Segunda-feira",
+      "localizacao": "",
+      "observacoes": "Especial para Novatos",
+      "sessoes": [
+        {
+          "horario_inicio": "12:00",
+          "horario_fim": "13:30",
+          "tipo": "Fechada",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/2400336138?pwd=aENTeEpScWo0ZFFWN21pMlM0Y1JGdz09"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Unidade de AA Online",
+      "dia_semana": "Segunda-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "12:00",
+          "horario_fim": "13:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/hzc-tkdm-wua"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Velejar de AA",
+      "dia_semana": "Segunda-feira",
+      "localizacao": "",
+      "observacoes": "Temáticas",
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "21:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/dah-mndv-mxf"
+        },
+        {
+          "horario_inicio": "22:00",
+          "horario_fim": "23:59",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/dah-mndv-mxf"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Vida Nova de AA",
+      "dia_semana": "Segunda-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "21:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/jao-qfef-yyo"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Vá com calma",
+      "dia_semana": "Segunda-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "14:00",
+          "horario_fim": "15:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/qkf-pypk-ycq"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "mAAis Propósito LGBT",
+      "dia_semana": "Segunda-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "21:30",
+          "tipo": "Fechada",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/89263475532"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "AA é Renascer",
+      "dia_semana": "Terça-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "22:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/fup-qnzu-gph"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Acolhimento",
+      "dia_semana": "Terça-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "07:00",
+          "horario_fim": "09:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/jsx-ajsp-cnb"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Agronômica SC",
+      "dia_semana": "Terça-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "18:00",
+          "horario_fim": "19:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/cou-gjxh-nqs"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "As mãos de AA",
+      "dia_semana": "Terça-feira",
+      "localizacao": "",
+      "observacoes": "Livro: Vivendo Sóbrio",
+      "sessoes": [
+        {
+          "horario_inicio": "22:00",
+          "horario_fim": "23:59",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/nms-pybg-jxd"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Esperança 29",
+      "dia_semana": "Terça-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "07:00",
+          "horario_fim": "09:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/uuq-phfb-idv"
+        },
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "21:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/uuq-phfb-idv"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Funciona",
+      "dia_semana": "Terça-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "09:00",
+          "horario_fim": "11:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/mrx-ooyn-qbr"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Liberdade Online de A.A.",
+      "dia_semana": "Terça-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "10:30",
+          "horario_fim": "12:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/dje-oant-snb"
+        },
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "20:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/dje-oant-snb"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Novo Horizonte",
+      "dia_semana": "Terça-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "20:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/myr-zqjx-ixc"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Primeiro Passo",
+      "dia_semana": "Terça-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "16:00",
+          "horario_fim": "17:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/xwo-cyph-qhf"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Sober Space",
+      "dia_semana": "Terça-feira",
+      "localizacao": "",
+      "observacoes": "Temáticas",
+      "sessoes": [
+        {
+          "horario_inicio": "13:30",
+          "horario_fim": "15:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/tat-cxzc-smx"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Sobriedade",
+      "dia_semana": "Terça-feira",
+      "localizacao": "",
+      "observacoes": "Literatura Geral",
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "21:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/obe-cpqk-esv"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "São Judas",
+      "dia_semana": "Terça-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "22:00",
+          "tipo": "Fechada",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/86445484192?pwd=Mi83ei91Y1k5UkJkRlplWVZTVWZzZz09"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Só Por Hoje RS",
+      "dia_semana": "Terça-feira",
+      "localizacao": "",
+      "observacoes": "Sentimentos",
+      "sessoes": [
+        {
+          "horario_inicio": "17:00",
+          "horario_fim": "19:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/itg-mqvw-kxt"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Tabapuã",
+      "dia_semana": "Terça-feira",
+      "localizacao": "",
+      "observacoes": "Somente para Mulheres",
+      "sessoes": [
+        {
+          "horario_inicio": "12:30",
+          "horario_fim": "13:30",
+          "tipo": "Fechada",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/2400336138?pwd=aENTeEpScWo0ZFFWN21pMlM0Y1JGdz09"
+        },
+        {
+          "horario_inicio": "18:10",
+          "horario_fim": "19:30",
+          "tipo": "Fechada",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/2400336138?pwd=aENTeEpScWo0ZFFWN21pMlM0Y1JGdz09"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Um Dia de Cada Vez de A.A. Online",
+      "dia_semana": "Terça-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "20:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/wfs-zbri-bba"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Unamar Online",
+      "dia_semana": "Terça-feira",
+      "localizacao": "",
+      "observacoes": "Especial para Novatos",
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "20:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/hpr-fvew-any"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Unidade de AA Online",
+      "dia_semana": "Terça-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "12:00",
+          "horario_fim": "13:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/hzc-tkdm-wua"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Velejar de AA",
+      "dia_semana": "Terça-feira",
+      "localizacao": "",
+      "observacoes": "Revista Vivência",
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "21:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/dah-mndv-mxf"
+        },
+        {
+          "horario_inicio": "22:00",
+          "horario_fim": "23:59",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/dah-mndv-mxf"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Vá com calma",
+      "dia_semana": "Terça-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "14:00",
+          "horario_fim": "15:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/qkf-pypk-ycq"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "mAAis Propósito LGBT",
+      "dia_semana": "Terça-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "21:30",
+          "tipo": "Fechada",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/89263475532"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "AA é Renascer",
+      "dia_semana": "Quarta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "22:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/fup-qnzu-gph"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Acolhimento",
+      "dia_semana": "Quarta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "07:00",
+          "horario_fim": "09:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/jsx-ajsp-cnb"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Agronômica SC",
+      "dia_semana": "Quarta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "18:00",
+          "horario_fim": "19:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/cou-gjxh-nqs"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "As mãos de AA",
+      "dia_semana": "Quarta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "22:00",
+          "horario_fim": "23:59",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/nms-pybg-jxd"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Esperança 29",
+      "dia_semana": "Quarta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "07:00",
+          "horario_fim": "09:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/uuq-phfb-idv"
+        },
+        {
+          "horario_inicio": "15:00",
+          "horario_fim": "17:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/uuq-phfb-idv"
+        },
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "21:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/uuq-phfb-idv"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Funciona",
+      "dia_semana": "Quarta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "09:00",
+          "horario_fim": "11:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/mrx-ooyn-qbr"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Liberdade Online de A.A.",
+      "dia_semana": "Quarta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "10:30",
+          "horario_fim": "12:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/dje-oant-snb"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Novo Horizonte",
+      "dia_semana": "Quarta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "20:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/myr-zqjx-ixc"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Pit Stop da Sobriedade",
+      "dia_semana": "Quarta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "22:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/tse-shbn-nzv"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Primeiro Passo",
+      "dia_semana": "Quarta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "16:00",
+          "horario_fim": "17:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/xwo-cyph-qhf"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Sober Space",
+      "dia_semana": "Quarta-feira",
+      "localizacao": "",
+      "observacoes": "Somente Meditação e Relaxamento",
+      "sessoes": [
+        {
+          "horario_inicio": "13:30",
+          "horario_fim": "15:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/tat-cxzc-smx"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Sobriedade",
+      "dia_semana": "Quarta-feira",
+      "localizacao": "",
+      "observacoes": "Livro Azul de Alcoólicos Anônimos",
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "21:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/obe-cpqk-esv"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "São Judas",
+      "dia_semana": "Quarta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "22:00",
+          "tipo": "Fechada",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/86445484192?pwd=Mi83ei91Y1k5UkJkRlplWVZTVWZzZz09"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Só Por Hoje RS",
+      "dia_semana": "Quarta-feira",
+      "localizacao": "",
+      "observacoes": "Com Ponderações do Coordenador",
+      "sessoes": [
+        {
+          "horario_inicio": "17:00",
+          "horario_fim": "19:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/itg-mqvw-kxt"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Unidade de AA Online",
+      "dia_semana": "Quarta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "12:00",
+          "horario_fim": "13:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/hzc-tkdm-wua"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Velejar de AA",
+      "dia_semana": "Quarta-feira",
+      "localizacao": "",
+      "observacoes": "Literatura Geral",
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "21:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/dah-mndv-mxf"
+        },
+        {
+          "horario_inicio": "22:00",
+          "horario_fim": "23:59",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/dah-mndv-mxf"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Vá com calma",
+      "dia_semana": "Quarta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "14:00",
+          "horario_fim": "15:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/qkf-pypk-ycq"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "mAAis Propósito LGBT",
+      "dia_semana": "Quarta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "21:30",
+          "tipo": "Fechada",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/89263475532"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "AA é Renascer",
+      "dia_semana": "Quinta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "22:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/fup-qnzu-gph"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Acolhimento",
+      "dia_semana": "Quinta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "07:00",
+          "horario_fim": "09:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/jsx-ajsp-cnb"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Agronômica SC",
+      "dia_semana": "Quinta-feira",
+      "localizacao": "",
+      "observacoes": "Somente para Mulheres",
+      "sessoes": [
+        {
+          "horario_inicio": "10:00",
+          "horario_fim": "12:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/cou-gjxh-nqs"
+        },
+        {
+          "horario_inicio": "18:00",
+          "horario_fim": "19:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/cou-gjxh-nqs"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "As mãos de AA",
+      "dia_semana": "Quinta-feira",
+      "localizacao": "",
+      "observacoes": "Livro: Na opinião de Bill",
+      "sessoes": [
+        {
+          "horario_inicio": "22:00",
+          "horario_fim": "23:59",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/nms-pybg-jxd"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Esperança 29",
+      "dia_semana": "Quinta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "07:00",
+          "horario_fim": "09:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/uuq-phfb-idv"
+        },
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "21:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/uuq-phfb-idv"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Funciona",
+      "dia_semana": "Quinta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "09:00",
+          "horario_fim": "11:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/mrx-ooyn-qbr"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Liberdade Online de A.A.",
+      "dia_semana": "Quinta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "10:30",
+          "horario_fim": "12:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/dje-oant-snb"
+        },
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "20:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/dje-oant-snb"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Novo Horizonte",
+      "dia_semana": "Quinta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "20:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/myr-zqjx-ixc"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Orientação de Santa Maria",
+      "dia_semana": "Quinta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "21:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/yvd-qrsz-kcz"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Pit Stop da Sobriedade",
+      "dia_semana": "Quinta-feira",
+      "localizacao": "",
+      "observacoes": "Especial para Novatos",
+      "sessoes": [
+        {
+          "horario_inicio": "08:00",
+          "horario_fim": "10:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/tse-shbn-nzv"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Primeiro Passo",
+      "dia_semana": "Quinta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "16:00",
+          "horario_fim": "17:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/xwo-cyph-qhf"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Sober Space",
+      "dia_semana": "Quinta-feira",
+      "localizacao": "",
+      "observacoes": "Sentimentos",
+      "sessoes": [
+        {
+          "horario_inicio": "13:30",
+          "horario_fim": "15:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/tat-cxzc-smx"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Sobriedade",
+      "dia_semana": "Quinta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "21:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/obe-cpqk-esv"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "São Judas",
+      "dia_semana": "Quinta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "22:00",
+          "tipo": "Fechada",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/86445484192?pwd=Mi83ei91Y1k5UkJkRlplWVZTVWZzZz09"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Só Por Hoje RS",
+      "dia_semana": "Quinta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "17:00",
+          "horario_fim": "19:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/itg-mqvw-kxt"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Tabapuã",
+      "dia_semana": "Quinta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "18:10",
+          "horario_fim": "19:30",
+          "tipo": "Fechada",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/2400336138?pwd=aENTeEpScWo0ZFFWN21pMlM0Y1JGdz09"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Um Dia de Cada Vez de A.A. Online",
+      "dia_semana": "Quinta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "20:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/wfs-zbri-bba"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Unidade de AA Online",
+      "dia_semana": "Quinta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "12:00",
+          "horario_fim": "13:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/hzc-tkdm-wua"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Velejar de AA",
+      "dia_semana": "Quinta-feira",
+      "localizacao": "",
+      "observacoes": "12 Passos de A.A.",
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "21:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/dah-mndv-mxf"
+        },
+        {
+          "horario_inicio": "22:00",
+          "horario_fim": "23:59",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/dah-mndv-mxf"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Vá com calma",
+      "dia_semana": "Quinta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "14:00",
+          "horario_fim": "15:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/qkf-pypk-ycq"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "mAAis Propósito LGBT",
+      "dia_semana": "Quinta-feira",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "21:30",
+          "tipo": "Fechada",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/89263475532"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "A.A. GRUPO SOARES MORENO",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "CE - Fortaleza",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "10:00",
+          "horario_fim": "12:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/sra-tnji-rvr"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "AA é Renascer",
+      "dia_semana": "Sexta-feira",
+      "localizacao": null,
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "22:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/fup-qnzu-gph"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Acolhimento",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "SP - Jaú",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "07:00",
+          "horario_fim": "09:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/jsx-ajsp-cnb"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Agronômica SC",
+      "dia_semana": "Sexta-feira",
+      "localizacao": null,
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "19:30",
+          "horario_fim": "21:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/yqr-knbp-fxd"
+        },
+        {
+          "horario_inicio": "18:00",
+          "horario_fim": "19:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/cou-gjxh-nqs"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Amanhecer em Sobriedade",
+      "dia_semana": "Sexta-feira",
+      "localizacao": null,
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "00:00",
+          "horario_fim": "02:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/tad-orjv-tsv"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "As mãos de AA",
+      "dia_semana": "Sexta-feira",
+      "localizacao": null,
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "22:00",
+          "horario_fim": "23:59",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/nms-pybg-jxd"
+        },
+        {
+          "horario_inicio": "19:30",
+          "horario_fim": "21:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/nms-pybg-jxd"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Esperança 29",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "SP - Campinas",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "07:00",
+          "horario_fim": "09:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/uuq-phfb-idv"
+        },
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "20:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/uuq-phfb-idv"
+        },
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "21:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/uuq-phfb-idv"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Funciona",
+      "dia_semana": "Sexta-feira",
+      "localizacao": null,
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "09:00",
+          "horario_fim": "11:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/jno-zrnd-iny"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "GRUPO Distrito 01",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "BA - Salvador",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "21:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/spa-sjnd-isy"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "GRUPO Distrito 03",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "BA - Salvador",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "19:30",
+          "horario_fim": "21:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/ssd-uhdu-fod"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "GRUPO Distrito V",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "ES - Guaçuí",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "19:30",
+          "horario_fim": "21:30",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/zhh-mpoj-iei"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "GRUPO FUNCIONA",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "ES - Serra",
+      "observacoes": "Reunião feminina | Reunião da Insônia",
+      "sessoes": [
+        {
+          "horario_inicio": "09:00",
+          "horario_fim": "11:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/mrx-ooyn-qbr"
+        },
+        {
+          "horario_inicio": "23:59",
+          "horario_fim": "01:59",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/mrx-ooyn-qbr"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "GRUPO INOVAÇÃO DE A.A. ONLINE",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "PR - Curitiba",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "21:30",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/dhm-gsyu-qdh"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "GRUPO LIBERTAÇÃO",
+      "dia_semana": "Sexta-feira",
+      "localizacao": null,
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "21:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/uhb-qsuw-jzw"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "GRUPO Área 02 - MG - Belo Horizonte",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "MG - Belo Horizonte",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "22:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "GoTo Meeting",
+          "url": "https://meet.goto.com/informativa"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo 24 Horas",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "PE - Recife",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "22:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "http://meet.google.com/jda-mrhq-mrd"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Agronômica",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "SC - Florianópolis",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "18:00",
+          "horario_fim": "19:30",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/cou-gjxh-nqs"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Alegria de Viver",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "PA - Santarém",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "22:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/emi-ioek-neu"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Amor",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "RJ - Rio de Janeiro",
+      "observacoes": "Senha: 000000 (Zero 6x)",
+      "sessoes": [
+        {
+          "horario_inicio": "09:00",
+          "horario_fim": "11:00",
+          "tipo": "Fechada",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/2228882015"
+        },
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "22:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/2228882015"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Atalaia",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "PR - Curitiba",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "20:30",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/fgh-yzos-udd"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Brooklin",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "SP - São Paulo",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "07:00",
+          "horario_fim": "09:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/96313398897?pwd=NkFNMkE0dG1JM05qYzVwOGhWazVzUT09"
+        },
+        {
+          "horario_inicio": "12:00",
+          "horario_fim": "14:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/83036313965?pwd=eW5KSUh4UzlYd0FMc3JJaFRmWnd5UT09"
+        },
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "21:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/602484694?pwd=SHR5WFFDN1B1eGZaaHJhVTVhL1B3dz09"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Central",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "SP - São Paulo",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "09:00",
+          "horario_fim": "11:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/gci-oahx-ekd"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Girassol - Bairro Perdizes",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "SP - São Paulo",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "18:30",
+          "horario_fim": "20:15",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/kaa-mowo-wea"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Hei de Vencer",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "SP - Mogi das Cruzes",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "22:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/tnj-zyww-mpx"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Igualdade",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "RJ - Niterói",
+      "observacoes": "Senha: 000000 | Feriados das 18h às 20h",
+      "sessoes": [
+        {
+          "horario_inicio": "19:30",
+          "horario_fim": "21:30",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/2828743881"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Ipanema",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "RJ - Rio de Janeiro",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "08:00",
+          "horario_fim": "09:30",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Zoom",
+          "url": "https://us06web.zoom.us/j/87125801163?pwd=CoVZBpBNXNf8aOyZrZfhBHbXbaqt4w.1"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Itaim Paulista",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "SP - São Paulo",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "22:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/ccd-stae-wfz"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Jardim",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "SP - São Paulo",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "20:30",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/6129787056"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Juntos",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "RJ - Rio de Janeiro",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "18:00",
+          "horario_fim": "20:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/8262888483?pwd=RWFJU0xza2NaV0thcGorVUxIUDNXUT09"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Libertação",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "MG - Juiz de Fora",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "21:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/rjv-wmnm-fth"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Maais",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "SP - São Paulo",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "21:30",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/89263475532?pwd=YVVhK0pmZTJ2WVUybnR3WXRUUjVNUT09"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Meier",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "RJ - Rio de Janeiro",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "10:00",
+          "horario_fim": "12:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/yxj-ebir-epo"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Nova Lapa",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "SP - São Paulo",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "22:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/hjt-crhd-hfg"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Nova Vida Online",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "BA - DISTRITO 01",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "21:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/spa-sjnd-isy"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Novo Horizonte",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "MG - Belo Horizonte",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "20:30",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/myr-zqjx-ixc"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Parque das Rosas",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "RJ - Rio de Janeiro",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "19:30",
+          "horario_fim": "21:30",
+          "tipo": "Fechada",
+          "aplicativo": "Zoom",
+          "url": "https://us06web.zoom.us/j/85189197468?pwd=MnJieldHZmltdHlQdkRZQXlTNmZOZz09"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Passe Adiante",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "RJ - Volta Redonda",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "17:00",
+          "horario_fim": "18:30",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/vei-nwst-znm"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Posto 11",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "RJ - Rio de Janeiro",
+      "observacoes": "Senha: 000000 (Zero 6x)",
+      "sessoes": [
+        {
+          "horario_inicio": "10:30",
+          "horario_fim": "12:30",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/7253264713"
+        },
+        {
+          "horario_inicio": "17:30",
+          "horario_fim": "19:30",
+          "tipo": "Fechada",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/3268875003"
+        },
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "22:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/7253264713"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Potyguar",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "RN - Natal",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "18:00",
+          "horario_fim": "20:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/szb-tsrq-dzc"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Praça de Boa Viagem",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "PE - Recife",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "21:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/raj-jhax-gfp"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Quarentena Alto Petrópolis",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "RS - Porto Alegre",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "22:00",
+          "horario_fim": "00:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/xiu-bmrn-feq"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Reencontro",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "RS - Caxias do Sul",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "22:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/owu-ztpk-oia"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Rio de Janeiro",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "RJ - Rio de Janeiro",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "08:00",
+          "horario_fim": "09:30",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/8147845044"
+        },
+        {
+          "horario_inicio": "18:00",
+          "horario_fim": "19:30",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/8147845044"
+        },
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "21:30",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/8147845044"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Sem Fronteira",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "AL - Maceió",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "16:00",
+          "horario_fim": "18:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/qcp-ftvu-vnz"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Serenidade",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "MG - Uberaba",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "19:30",
+          "horario_fim": "21:30",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/mzb-dxvi-quc"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo São Luiz",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "RS - São Luiz Gonzaga",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "21:30",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/rzr-nwee-gsq"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Só por Hoje",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "SP - Barueri",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "20:30",
+          "horario_fim": "22:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Zoom",
+          "url": "https://zoom.us/j/698587530?pwd=3gbGMtUXxRs"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Unidos de Brotas",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "BA - Salvador",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "21:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/dud-zjer-ywi"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Velejar",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "RJ - Rio de Janeiro",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "21:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/dah-mndv-mxf"
+        },
+        {
+          "horario_inicio": "22:00",
+          "horario_fim": "00:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/dah-mndv-mxf"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Verdes Mares",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "CE - Fortaleza",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "21:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/ocg-gpkr-sip"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Vida Nova",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "RS - Santana do Livramento",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "21:30",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/skk-rwfy-pej"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupo Vila Prudente",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "SP - São Paulo",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "22:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/84123546043?pwd=clVzSGQvR1phR1pVYXAzV21VZy9rUT09"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Grupos de Osasco - Região Oeste",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "SP - Osasco",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "22:30",
+          "horario_fim": "01:00",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Zoom",
+          "url": "https://us06web.zoom.us/j/81905394479"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Há uma solução",
+      "dia_semana": "Sexta-feira",
+      "localizacao": null,
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "21:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/zpn-qyrb-tkj"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Ipanema RJ",
+      "dia_semana": "Sexta-feira",
+      "localizacao": null,
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "08:00",
+          "horario_fim": "09:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/zfr-hpzj-kxb"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Junte-se a nós",
+      "dia_semana": "Sexta-feira",
+      "localizacao": null,
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "07:00",
+          "horario_fim": "09:00",
+          "tipo": "Fechada",
+          "aplicativo": "Zoom",
+          "url": "https://us06web.zoom.us/j/3990992210"
+        },
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "20:30",
+          "tipo": "Fechada",
+          "aplicativo": "Zoom",
+          "url": "https://us06web.zoom.us/j/3990992210"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Liberdade Online de A.A.",
+      "dia_semana": "Sexta-feira",
+      "localizacao": null,
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "10:30",
+          "horario_fim": "12:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/dje-oant-snb"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Novo Horizonte",
+      "dia_semana": "Sexta-feira",
+      "localizacao": null,
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "20:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/qpb-oewt-hjz"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Orientação de Santa Maria",
+      "dia_semana": "Sexta-feira",
+      "localizacao": null,
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "21:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/yrn-qzpb-txk"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Pit Stop da Sobriedade",
+      "dia_semana": "Sexta-feira",
+      "localizacao": null,
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "22:00",
+          "horario_fim": "23:59",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/ypz-qrbn-txk"
+        },
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "22:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/tse-shbn-nzv"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Primeiro Passo",
+      "dia_semana": "Sexta-feira",
+      "localizacao": null,
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "20:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/eos-bkzq-xhf"
+        },
+        {
+          "horario_inicio": "16:00",
+          "horario_fim": "17:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/xwo-cyph-qhf"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Serenidade Online",
+      "dia_semana": "Sexta-feira",
+      "localizacao": null,
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "21:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/ypn-qzrb-tkj"
+        },
+        {
+          "horario_inicio": "19:30",
+          "horario_fim": "21:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/mzb-dxvi-quc"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Sober Space",
+      "dia_semana": "Sexta-feira",
+      "localizacao": null,
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "13:00",
+          "horario_fim": "14:30",
+          "tipo": "Aberta para visitantes",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/bfr-shnb-zqk"
+        },
+        {
+          "horario_inicio": "13:30",
+          "horario_fim": "15:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/tat-cxzc-smx"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Sobriedade",
+      "dia_semana": "Sexta-feira",
+      "localizacao": null,
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "21:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/bnz-qrtp-fxj"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "São Judas",
+      "dia_semana": "Sexta-feira",
+      "localizacao": null,
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "22:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/qzp-bnrt-xyk"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Só Por Hoje RS",
+      "dia_semana": "Sexta-feira",
+      "localizacao": null,
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "20:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/xgm-jqwt-ybi"
+        },
+        {
+          "horario_inicio": "17:00",
+          "horario_fim": "19:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/itg-mqvw-kxt"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Tabapuã",
+      "dia_semana": "Sexta-feira",
+      "localizacao": null,
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "19:30",
+          "horario_fim": "21:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/xpn-qzrb-tkj"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Um Dia de Cada Vez de A.A. Online",
+      "dia_semana": "Sexta-feira",
+      "localizacao": null,
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "19:30",
+          "horario_fim": "21:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/mus-yiop-ejn"
+        },
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "20:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/wfs-zbri-bba"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Unamar Online",
+      "dia_semana": "Sexta-feira",
+      "localizacao": null,
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "21:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/tkh-qpnj-yxb"
+        },
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "20:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/hpr-fvew-any"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Unidade de AA Online",
+      "dia_semana": "Sexta-feira",
+      "localizacao": "SP - Campinas",
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "12:00",
+          "horario_fim": "13:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/hzc-tkdm-wua"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Velejar de AA",
+      "dia_semana": "Sexta-feira",
+      "localizacao": null,
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "21:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/bfp-oewz-xhn"
+        },
+        {
+          "horario_inicio": "22:00",
+          "horario_fim": "23:59",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/dah-mndv-mxf"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Vida Nova de AA",
+      "dia_semana": "Sexta-feira",
+      "localizacao": null,
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "21:00",
+          "horario_fim": "22:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/zqn-pybr-txk"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Vá com calma",
+      "dia_semana": "Sexta-feira",
+      "localizacao": null,
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "18:00",
+          "horario_fim": "19:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/hnr-byyp-thj"
+        },
+        {
+          "horario_inicio": "14:00",
+          "horario_fim": "15:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/qkf-pypk-ycq"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "mAAis Propósito LGBT",
+      "dia_semana": "Sexta-feira",
+      "localizacao": null,
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "21:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/yrp-qznb-txk"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "AA é Renascer",
+      "dia_semana": "Sábado",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "22:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/fup-qnzu-gph"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Agronômica SC",
+      "dia_semana": "Sábado",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "18:00",
+          "horario_fim": "19:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/cou-gjxh-nqs"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Amanhecer em Sobriedade",
+      "dia_semana": "Sábado",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "00:00",
+          "horario_fim": "02:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/tad-orjv-tsv"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "As mãos de AA",
+      "dia_semana": "Sábado",
+      "localizacao": "",
+      "observacoes": "12 Passos de A.A.",
+      "sessoes": [
+        {
+          "horario_inicio": "22:00",
+          "horario_fim": "23:59",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/nms-pybg-jxd"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Boa Vontade",
+      "dia_semana": "Sábado",
+      "localizacao": null,
+      "observacoes": null,
+      "sessoes": [
+        {
+          "horario_inicio": "07:00",
+          "horario_fim": "09:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/wip-mjfw-ejy"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Esperança 29",
+      "dia_semana": "Sábado",
+      "localizacao": "",
+      "observacoes": "Especial para Novatos",
+      "sessoes": [
+        {
+          "horario_inicio": "07:00",
+          "horario_fim": "09:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/uuq-phfb-idv"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Funciona",
+      "dia_semana": "Sábado",
+      "localizacao": "",
+      "observacoes": "Temáticas",
+      "sessoes": [
+        {
+          "horario_inicio": "09:00",
+          "horario_fim": "11:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/mrx-ooyn-qbr"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Ipanema RJ",
+      "dia_semana": "Sábado",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "08:00",
+          "horario_fim": "09:30",
+          "tipo": "Fechada",
+          "aplicativo": "Zoom",
+          "url": "https://us06web.zoom.us/j/87125801163?pwd=CoVZBpBNXNf8aOyZrZfhBHbXbaqt4w.1"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Junte-se a nós",
+      "dia_semana": "Sábado",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "07:00",
+          "horario_fim": "09:00",
+          "tipo": "Fechada",
+          "aplicativo": "Zoom",
+          "url": "https://us06web.zoom.us/j/3990992210"
+        },
+        {
+          "horario_inicio": "09:30",
+          "horario_fim": "11:30",
+          "tipo": "Fechada",
+          "aplicativo": "Zoom",
+          "url": "https://us06web.zoom.us/j/3990992210"
+        },
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "20:30",
+          "tipo": "Fechada",
+          "aplicativo": "Zoom",
+          "url": "https://us06web.zoom.us/j/3990992210"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Liberdade Online de A.A.",
+      "dia_semana": "Sábado",
+      "localizacao": "",
+      "observacoes": "Com Ponderações do Coordenador",
+      "sessoes": [
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "20:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/dje-oant-snb"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Orientação de Santa Maria",
+      "dia_semana": "Sábado",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "18:30",
+          "horario_fim": "20:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/yvd-qrsz-kcz"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Primeiro Passo",
+      "dia_semana": "Sábado",
+      "localizacao": "",
+      "observacoes": "Revista Vivência",
+      "sessoes": [
+        {
+          "horario_inicio": "16:00",
+          "horario_fim": "17:30",
+          "tipo": "Revista Vivência",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/xwo-cyph-qhf"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Sobriedade",
+      "dia_semana": "Sábado",
+      "localizacao": "",
+      "observacoes": "Livro: Vivendo Sóbrio",
+      "sessoes": [
+        {
+          "horario_inicio": "10:00",
+          "horario_fim": "12:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/obe-cpqk-esv"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "São Judas",
+      "dia_semana": "Sábado",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "18:00",
+          "horario_fim": "20:00",
+          "tipo": "Fechada",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/86445484192?pwd=Mi83ei91Y1k5UkJkRlplWVZTVWZzZz09"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Só Por Hoje RS",
+      "dia_semana": "Sábado",
+      "localizacao": "",
+      "observacoes": "Somente Meditação e Relaxamento",
+      "sessoes": [
+        {
+          "horario_inicio": "17:00",
+          "horario_fim": "19:00",
+          "tipo": "Somente Meditação e Relaxamento",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/itg-mqvw-kxt"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Tabapuã",
+      "dia_semana": "Sábado",
+      "localizacao": "",
+      "observacoes": "Literatura Geral",
+      "sessoes": [
+        {
+          "horario_inicio": "17:00",
+          "horario_fim": "18:30",
+          "tipo": "Literatura Geral",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/2400336138?pwd=aENTeEpScWo0ZFFWN21pMlM0Y1JGdz09"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Um Dia de Cada Vez de A.A. Online",
+      "dia_semana": "Sábado",
+      "localizacao": "",
+      "observacoes": "Leitura de Literatura + Partilhas",
+      "sessoes": [
+        {
+          "horario_inicio": "17:00",
+          "horario_fim": "18:30",
+          "tipo": "Leitura de Literatura + Partilhas",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/wfs-zbri-bba"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Velejar de AA",
+      "dia_semana": "Sábado",
+      "localizacao": "",
+      "observacoes": "Somente para Mulheres",
+      "sessoes": [
+        {
+          "horario_inicio": "16:00",
+          "horario_fim": "18:00",
+          "tipo": "",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/dah-mndv-mxf"
+        },
+        {
+          "horario_inicio": "19:00",
+          "horario_fim": "21:00",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/dah-mndv-mxf"
+        },
+        {
+          "horario_inicio": "22:00",
+          "horario_fim": "23:59",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/dah-mndv-mxf"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "Vá com calma",
+      "dia_semana": "Sábado",
+      "localizacao": "",
+      "observacoes": "Especial para Novatos",
+      "sessoes": [
+        {
+          "horario_inicio": "14:00",
+          "horario_fim": "15:30",
+          "tipo": "Fechada",
+          "aplicativo": "Google Meet",
+          "url": "https://meet.google.com/qkf-pypk-ycq"
+        }
+      ]
+    },
+    {
+      "nome_grupo": "mAAis Propósito LGBT",
+      "dia_semana": "Sábado",
+      "localizacao": "",
+      "observacoes": "Partilha de Experiências",
+      "sessoes": [
+        {
+          "horario_inicio": "20:00",
+          "horario_fim": "21:30",
+          "tipo": "Fechada",
+          "aplicativo": "Zoom",
+          "url": "https://us02web.zoom.us/j/89263475532"
+        }
+      ]
+    }
+  ]
+}

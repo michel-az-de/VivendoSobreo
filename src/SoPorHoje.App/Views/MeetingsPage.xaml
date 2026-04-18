@@ -3,155 +3,121 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:SoPorHoje.App.ViewModels"
              xmlns:models="clr-namespace:SoPorHoje.App.Models"
+             xmlns:svc="clr-namespace:SoPorHoje.App.Services"
+             xmlns:conv="clr-namespace:SoPorHoje.App.Converters"
              x:Class="SoPorHoje.App.Views.MeetingsPage"
              x:DataType="vm:MeetingsViewModel"
-             BackgroundColor="{StaticResource BgPrimary}"
+             BackgroundColor="#0C1219"
+             Shell.NavBarIsVisible="False"
              Title="Reuniões">
 
-    <ScrollView>
-        <VerticalStackLayout Padding="16" Spacing="16">
+    <ContentPage.Resources>
+        <conv:BoolToColorConverter x:Key="BoolToColorConverter" />
+        <conv:InverseBoolConverter x:Key="InverseBoolConverter" />
+    </ContentPage.Resources>
 
+    <Grid RowDefinitions="Auto,*">
+
+        <!-- Header -->
+        <VerticalStackLayout Grid.Row="0" Margin="16,12,16,8" Spacing="2">
             <Label Text="Reuniões Online"
-                   FontSize="24"
-                   FontAttributes="Bold"
-                   TextColor="{StaticResource TextPrimary}"
-                   SemanticProperties.HeadingLevel="Level1" />
-
-            <!-- Meetings list -->
-            <CollectionView ItemsSource="{Binding Meetings}">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate x:DataType="models:OnlineMeeting">
-                        <Border StrokeThickness="1"
-                                Stroke="{StaticResource BgBorder}"
-                                BackgroundColor="{StaticResource BgSurface}"
-                                Padding="14,16"
-                                Margin="0,4"
-                                StrokeShape="RoundRectangle 16">
-                            <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto,Auto" ColumnSpacing="10" RowSpacing="4">
-
-                                <!-- Group name with optional live dot -->
-                                <HorizontalStackLayout Grid.Row="0" Grid.Column="0" Spacing="8">
-                                    <Frame WidthRequest="10"
-                                           HeightRequest="10"
-                                           CornerRadius="5"
-                                           BackgroundColor="{StaticResource Success}"
-                                           Padding="0"
-                                           HasShadow="False"
-                                           VerticalOptions="Center"
-                                           IsVisible="{Binding IsLiveNow}" />
-                                    <Label Text="{Binding GroupName}"
-                                           FontSize="16"
-                                           FontAttributes="Bold"
-                                           TextColor="{StaticResource TextPrimary}" />
-                                    <Border StrokeThickness="0"
-                                            BackgroundColor="{StaticResource Success}"
-                                            Padding="6,2"
-                                            StrokeShape="RoundRectangle 6"
-                                            IsVisible="{Binding IsLiveNow}">
-                                        <Label Text="AO VIVO"
-                                               FontSize="10"
-                                               FontAttributes="Bold"
-                                               TextColor="{StaticResource TextPrimary}" />
-                                    </Border>
-                                </HorizontalStackLayout>
-
-                                <!-- Schedule -->
-                                <Label Grid.Row="1" Grid.Column="0"
-                                       TextColor="{StaticResource TextSecondary}"
-                                       FontSize="13">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span Text="{Binding FormattedDays}" />
-                                            <Span Text=" · " />
-                                            <Span Text="{Binding FormattedTime}" />
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-
-                                <!-- Platform -->
-                                <Label Grid.Row="2" Grid.Column="0"
-                                       Text="{Binding Platform}"
-                                       TextColor="{StaticResource TextMuted}"
-                                       FontSize="12" />
-
-                                <!-- Join button -->
-                                <Button Grid.Row="0" Grid.Column="1" Grid.RowSpan="3"
-                                        Text="Entrar"
-                                        BackgroundColor="{StaticResource Accent}"
-                                        TextColor="{StaticResource TextPrimary}"
-                                        CornerRadius="16"
-                                        HeightRequest="44"
-                                        FontSize="14"
-                                        MinimumWidthRequest="44"
-                                        MinimumHeightRequest="44"
-                                        VerticalOptions="Center"
-                                        Command="{Binding Source={RelativeSource AncestorType={x:Type vm:MeetingsViewModel}}, Path=JoinMeetingCommand}"
-                                        CommandParameter="{Binding .}"
-                                        SemanticProperties.Description="Entrar na reunião" />
-                            </Grid>
-                        </Border>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-
-            <!-- Links section -->
-            <Border StrokeThickness="1"
-                    Stroke="{StaticResource BgBorder}"
-                    BackgroundColor="{StaticResource BgSurface}"
-                    Padding="14,16"
-                    StrokeShape="RoundRectangle 16">
-                <VerticalStackLayout Spacing="12">
-                    <Label Text="Links Úteis"
-                           FontSize="16"
-                           FontAttributes="Bold"
-                           TextColor="{StaticResource TextPrimary}"
-                           SemanticProperties.HeadingLevel="Level2" />
-
-                    <Label Text="A.A. Brasil"
-                           TextColor="{StaticResource Accent}"
-                           FontSize="15"
-                           TextDecorations="Underline"
-                           MinimumHeightRequest="44">
-                        <Label.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding OpenLinkCommand}" CommandParameter="https://www.aa.org.br" />
-                        </Label.GestureRecognizers>
-                    </Label>
-
-                    <Label Text="Al-Anon"
-                           TextColor="{StaticResource Accent}"
-                           FontSize="15"
-                           TextDecorations="Underline"
-                           MinimumHeightRequest="44">
-                        <Label.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding OpenLinkCommand}" CommandParameter="https://www.al-anon.org.br" />
-                        </Label.GestureRecognizers>
-                    </Label>
-
-                    <Label Text="CVV 188"
-                           TextColor="{StaticResource Accent}"
-                           FontSize="15"
-                           TextDecorations="Underline"
-                           MinimumHeightRequest="44">
-                        <Label.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding OpenLinkCommand}" CommandParameter="tel:188" />
-                        </Label.GestureRecognizers>
-                    </Label>
-
-                    <Label Text="Grupos presenciais"
-                           TextColor="{StaticResource Accent}"
-                           FontSize="15"
-                           TextDecorations="Underline"
-                           MinimumHeightRequest="44">
-                        <Label.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding OpenLinkCommand}" CommandParameter="https://www.aa.org.br/encontre-aa" />
-                        </Label.GestureRecognizers>
-                    </Label>
-                </VerticalStackLayout>
-            </Border>
-
-            <BoxView HeightRequest="16" Color="Transparent" />
-
+                   FontSize="22" FontAttributes="Bold"
+                   TextColor="#E2E8F0" />
+            <Label Text="{Binding TodayLabel}"
+                   FontSize="13" TextColor="#8A9AAE" />
+            <Label FontSize="10" TextColor="#49596B" Margin="0,2,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Fonte: " />
+                        <Span Text="aa.org.br" TextColor="#3A8AC5" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
         </VerticalStackLayout>
-    </ScrollView>
+
+        <!-- Meetings list -->
+        <CollectionView Grid.Row="1"
+                         ItemsSource="{Binding MeetingGroups}"
+                         IsGrouped="True"
+                         IsVisible="{Binding HasMeetings}">
+            <CollectionView.GroupHeaderTemplate>
+                <DataTemplate x:DataType="svc:MeetingGroup">
+                    <Label Text="{Binding DayName}"
+                           FontSize="12" FontAttributes="Bold"
+                           TextColor="#D4A017" CharacterSpacing="0.5"
+                           Margin="16,14,16,6"
+                           BackgroundColor="#0C1219" />
+                </DataTemplate>
+            </CollectionView.GroupHeaderTemplate>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:OnlineMeeting">
+                    <Border Stroke="#1D2C3C" StrokeThickness="1"
+                            BackgroundColor="#131D28"
+                            Padding="14"
+                            Margin="16,0,16,8"
+                            StrokeShape="RoundRectangle 14,14,14,14">
+                        <Border.Triggers>
+                            <DataTrigger TargetType="Border" Binding="{Binding IsLiveNow}" Value="True">
+                                <Setter Property="Stroke" Value="#1A2E1F" />
+                                <Setter Property="BackgroundColor" Value="#0F1A13" />
+                            </DataTrigger>
+                        </Border.Triggers>
+                        <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto,Auto" ColumnSpacing="12" RowSpacing="3">
+
+                            <!-- Group name -->
+                            <HorizontalStackLayout Spacing="8">
+                                <Frame WidthRequest="8" HeightRequest="8" CornerRadius="4"
+                                       BackgroundColor="#27AE60" Padding="0" HasShadow="False"
+                                       VerticalOptions="Center" IsVisible="{Binding IsLiveNow}" />
+                                <Label Text="{Binding GroupName}"
+                                       FontSize="15" FontAttributes="Bold" TextColor="#E2E8F0"
+                                       LineBreakMode="TailTruncation" />
+                            </HorizontalStackLayout>
+
+                            <!-- Time -->
+                            <Label Grid.Row="1"
+                                   Text="{Binding StatusText}"
+                                   FontSize="13" FontAttributes="Bold"
+                                   TextColor="{Binding IsLiveNow, Converter={StaticResource BoolToColorConverter}}" />
+
+                            <!-- Platform badge -->
+                            <Label Grid.Row="2"
+                                   Text="{Binding Platform}" FontSize="10"
+                                   TextColor="#49596B" />
+
+                            <!-- Join button -->
+                            <Button Grid.RowSpan="3" Grid.Column="1"
+                                    Text="Entrar"
+                                    TextColor="White"
+                                    FontSize="12" FontAttributes="Bold"
+                                    CornerRadius="10" HeightRequest="36"
+                                    Padding="12,0"
+                                    VerticalOptions="Center"
+                                    BackgroundColor="#3A8AC5"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.JoinMeetingCommand}"
+                                    CommandParameter="{Binding .}">
+                                <Button.Triggers>
+                                    <DataTrigger TargetType="Button" Binding="{Binding IsLiveNow}" Value="True">
+                                        <Setter Property="BackgroundColor" Value="#27AE60" />
+                                    </DataTrigger>
+                                </Button.Triggers>
+                            </Button>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- Empty state -->
+        <VerticalStackLayout Grid.Row="1"
+                              IsVisible="{Binding HasMeetings, Converter={StaticResource InverseBoolConverter}}"
+                              VerticalOptions="Center" HorizontalOptions="Center"
+                              Spacing="8" Padding="32">
+            <Label Text="Nenhuma reunião cadastrada."
+                   FontSize="16" TextColor="#8A9AAE"
+                   HorizontalTextAlignment="Center" />
+        </VerticalStackLayout>
+
+    </Grid>
 
 </ContentPage>

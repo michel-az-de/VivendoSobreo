@@ -5,7 +5,8 @@
              xmlns:conv="clr-namespace:SoPorHoje.App.Converters"
              x:Class="SoPorHoje.App.Views.HomePage"
              x:DataType="vm:HomeViewModel"
-             BackgroundColor="{StaticResource BgPrimary}"
+             BackgroundColor="#0C1219"
+             Shell.NavBarIsVisible="False"
              Title="Só Por Hoje">
 
     <ContentPage.Resources>
@@ -14,300 +15,308 @@
     </ContentPage.Resources>
 
     <ScrollView>
-        <VerticalStackLayout Padding="16" Spacing="16">
+        <VerticalStackLayout Padding="0,12,0,30" Spacing="0">
 
             <!-- a) Live meeting banner -->
-            <Border StrokeThickness="1"
-                    Stroke="{StaticResource BgBorder}"
-                    BackgroundColor="#0C2E1C"
+            <Border Stroke="#1A2E1F" StrokeThickness="1"
+                    BackgroundColor="#0F1A13"
                     IsVisible="{Binding HasLiveMeeting}"
-                    Padding="14,16"
-                    StrokeShape="RoundRectangle 16">
+                    Padding="14,12"
+                    Margin="16,0,16,10"
+                    StrokeShape="RoundRectangle 14,14,14,14">
                 <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
-                    <Frame WidthRequest="10"
-                           HeightRequest="10"
-                           CornerRadius="5"
-                           BackgroundColor="{StaticResource Success}"
-                           Padding="0"
-                           HasShadow="False"
+                    <Frame WidthRequest="10" HeightRequest="10" CornerRadius="5"
+                           BackgroundColor="#27AE60" Padding="0" HasShadow="False"
                            VerticalOptions="Center" />
-                    <Label Text="{Binding LiveMeetingName}"
-                           TextColor="{StaticResource TextPrimary}"
-                           FontSize="14"
-                           VerticalOptions="Center"
-                           HorizontalOptions="FillAndExpand" />
+                    <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand" Spacing="0">
+                        <Label Text="{Binding LiveMeetingName}"
+                               TextColor="#E2E8F0" FontSize="14" />
+                        <Label Text="{Binding LiveMeetingEndTime, StringFormat='até {0}'}"
+                               TextColor="#27AE60" FontSize="11" />
+                    </VerticalStackLayout>
                     <Button Text="Entrar"
-                            BackgroundColor="{StaticResource Success}"
-                            TextColor="{StaticResource TextPrimary}"
-                            CornerRadius="16"
-                            HeightRequest="44"
-                            FontSize="14"
-                            MinimumWidthRequest="44"
-                            Command="{Binding JoinLiveMeetingCommand}"
-                            SemanticProperties.Description="Entrar na reunião ao vivo" />
+                            BackgroundColor="#27AE60" TextColor="White"
+                            CornerRadius="12" HeightRequest="36" FontSize="13"
+                            FontAttributes="Bold" Padding="14,0"
+                            Command="{Binding JoinLiveMeetingCommand}" />
                 </HorizontalStackLayout>
             </Border>
 
-            <!-- Next meeting banner (when not live) -->
-            <Border StrokeThickness="1"
-                    Stroke="{StaticResource BgBorder}"
-                    BackgroundColor="{StaticResource BgSurface}"
+            <!-- Next meeting banner -->
+            <Border Stroke="#1D2C3C" StrokeThickness="1"
+                    BackgroundColor="#131D28"
                     IsVisible="{Binding HasNextMeeting}"
-                    Padding="14,16"
-                    StrokeShape="RoundRectangle 16">
-                <Label TextColor="{StaticResource TextSecondary}" FontSize="14">
+                    Padding="14,12"
+                    Margin="16,0,16,10"
+                    StrokeShape="RoundRectangle 14,14,14,14">
+                <Label TextColor="#8A9AAE" FontSize="13">
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="Próxima: " />
-                            <Span Text="{Binding NextMeetingName}" FontAttributes="Bold" TextColor="{StaticResource TextPrimary}" />
+                            <Span Text="{Binding NextMeetingName}" FontAttributes="Bold" TextColor="#E2E8F0" />
                             <Span Text=" em " />
-                            <Span Text="{Binding NextMeetingMinutes}" FontAttributes="Bold" TextColor="{StaticResource TextPrimary}" />
-                            <Span Text="min" />
+                            <Span Text="{Binding NextMeetingMinutes}" FontAttributes="Bold" TextColor="#E2E8F0" />
+                            <Span Text=" min" />
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
             </Border>
 
-            <!-- b) SOS Button -->
-            <Border StrokeThickness="1"
-                    Stroke="{StaticResource BgBorder}"
-                    BackgroundColor="#2A1212"
-                    Padding="14,16"
-                    StrokeShape="RoundRectangle 16"
-                    SemanticProperties.Hint="Abre tela de ajuda emergencial">
-                <Border.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding OpenSOSCommand}" />
-                </Border.GestureRecognizers>
-                <Label Text="&#x1F198; Preciso de ajuda agora"
-                       TextColor="{StaticResource TextPrimary}"
-                       FontSize="16"
-                       FontAttributes="Bold"
+            <!-- b) Counter section — hero area -->
+            <VerticalStackLayout HorizontalOptions="Center" Spacing="4" Margin="0,20,0,12">
+
+                <!-- Chip badge circular com cor da ficha -->
+                <Frame WidthRequest="48" HeightRequest="48" CornerRadius="24"
+                       Padding="0" HasShadow="False"
+                       BackgroundColor="{Binding CurrentChipColor}"
+                       HorizontalOptions="Center">
+                    <Label Text="{Binding CurrentChipEmoji}"
+                           FontSize="22"
+                           HorizontalOptions="Center" VerticalOptions="Center"
+                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                </Frame>
+
+                <!-- Número GIGANTE -->
+                <Label Text="{Binding SoberDays}"
+                       FontSize="64" FontAttributes="Bold"
+                       TextColor="#E2E8F0"
                        HorizontalTextAlignment="Center"
-                       MinimumHeightRequest="44"
-                       VerticalTextAlignment="Center" />
-            </Border>
+                       Margin="0,4,0,0" />
 
-            <!-- c) Counter section -->
-            <Border StrokeThickness="1"
-                    Stroke="{StaticResource BgBorder}"
-                    BackgroundColor="{StaticResource BgSurface}"
-                    Padding="14,16"
-                    StrokeShape="RoundRectangle 16">
-                <VerticalStackLayout Spacing="8" HorizontalOptions="Center">
-                    <!-- Chip emoji circle -->
-                    <Frame WidthRequest="56"
-                           HeightRequest="56"
-                           CornerRadius="28"
-                           BackgroundColor="{StaticResource Accent}"
-                           Padding="0"
-                           HasShadow="False"
-                           HorizontalOptions="Center">
-                        <Label Text="{Binding CurrentChipEmoji}"
-                               FontSize="28"
-                               HorizontalOptions="Center"
-                               VerticalOptions="Center" />
-                    </Frame>
+                <!-- Subtítulo -->
+                <Label TextColor="#8A9AAE" FontSize="14" HorizontalTextAlignment="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{Binding SoberDays, StringFormat='{0} dias sóbrios'}" />
+                            <Span Text=" · " />
+                            <Span Text="{Binding SoberMonths}" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
 
-                    <!-- Sober days -->
-                    <Label Text="{Binding SoberDays}"
-                           FontSize="60"
-                           FontAttributes="Bold"
-                           TextColor="{StaticResource TextPrimary}"
-                           HorizontalTextAlignment="Center"
-                           SemanticProperties.HeadingLevel="Level2" />
+                <!-- Chip name -->
+                <Label Text="{Binding CurrentChipName}"
+                       FontSize="12" TextColor="#49596B"
+                       HorizontalTextAlignment="Center" Margin="0,2,0,0" />
 
-                    <Label HorizontalTextAlignment="Center"
-                           TextColor="{StaticResource TextSecondary}"
-                           FontSize="14">
-                        <Label.FormattedText>
-                            <FormattedString>
-                                <Span Text="{Binding SoberDays}" />
-                                <Span Text=" dias sóbrios · " />
-                                <Span Text="{Binding SoberMonths}" />
-                            </FormattedString>
-                        </Label.FormattedText>
-                    </Label>
-
-                    <!-- Progress bar -->
-                    <ProgressBar Progress="{Binding ProgressToNextChip}"
-                                 ProgressColor="{StaticResource Accent}"
-                                 HeightRequest="8" />
-
-                    <Label TextColor="{StaticResource TextSecondary}" FontSize="12" HorizontalTextAlignment="Center">
+                <!-- Progress bar para próxima ficha -->
+                <Grid Margin="40,10,40,0" RowDefinitions="Auto,Auto" ColumnDefinitions="*,Auto" ColumnSpacing="8">
+                    <Label FontSize="10" TextColor="#49596B">
                         <Label.FormattedText>
                             <FormattedString>
                                 <Span Text="Próxima: " />
-                                <Span Text="{Binding NextChipName}" FontAttributes="Bold" />
-                                <Span Text=" — " />
-                                <Span Text="{Binding DaysToNextChip}" />
-                                <Span Text="d" />
+                                <Span Text="{Binding NextChipName}" />
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>
+                    <Label Grid.Column="1"
+                           Text="{Binding DaysToNextChip, StringFormat='{0}d'}"
+                           FontSize="10" TextColor="#49596B" />
+
+                    <Border Grid.Row="1" Grid.ColumnSpan="2"
+                            HeightRequest="4" Margin="0,4,0,0"
+                            StrokeThickness="0"
+                            BackgroundColor="#1D2C3C"
+                            StrokeShape="RoundRectangle 2,2,2,2">
+                        <ProgressBar Progress="{Binding ProgressToNextChip}"
+                                     ProgressColor="#3A8AC5"
+                                     HeightRequest="4" />
+                    </Border>
+                </Grid>
+            </VerticalStackLayout>
+
+            <!-- c) SOS Button — destaque vermelho -->
+            <Border Stroke="#2A1215" StrokeThickness="1"
+                    BackgroundColor="#150D0E"
+                    Padding="14"
+                    Margin="16,0,16,10"
+                    StrokeShape="RoundRectangle 14,14,14,14">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding OpenSOSCommand}" />
+                </Border.GestureRecognizers>
+                <HorizontalStackLayout HorizontalOptions="Center" Spacing="8">
+                    <Label Text="&#x1F198;" FontSize="16" VerticalOptions="Center" />
+                    <Label Text="Preciso de ajuda agora"
+                           TextColor="#C0392B" FontSize="14" FontAttributes="Bold"
+                           VerticalOptions="Center" />
+                </HorizontalStackLayout>
+            </Border>
+
+            <!-- d) Daily pledge — NÃO fez ainda -->
+            <Border Stroke="#1A2E1F" StrokeThickness="1"
+                    BackgroundColor="#0F1A13"
+                    Padding="16"
+                    Margin="16,0,16,10"
+                    StrokeShape="RoundRectangle 16,16,16,16"
+                    IsVisible="{Binding HasPledgedToday, Converter={StaticResource InverseBoolConverter}}">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding MakePledgeCommand}" />
+                </Border.GestureRecognizers>
+                <VerticalStackLayout HorizontalOptions="Center" Spacing="6">
+                    <Label Text="&#x270B; Só por hoje, eu não vou beber"
+                           FontSize="16" FontAttributes="Bold" TextColor="#27AE60"
+                           HorizontalTextAlignment="Center" />
+                    <Label Text="Toque para fazer seu compromisso"
+                           FontSize="12" TextColor="#8A9AAE"
+                           HorizontalTextAlignment="Center" />
                 </VerticalStackLayout>
             </Border>
 
-            <!-- d) Daily pledge -->
-            <Button Text="&#x270B; Só por hoje, eu não vou beber"
-                    BackgroundColor="{StaticResource Success}"
-                    TextColor="{StaticResource TextPrimary}"
-                    CornerRadius="16"
-                    HeightRequest="52"
-                    FontSize="16"
-                    MinimumHeightRequest="44"
-                    MinimumWidthRequest="44"
-                    Command="{Binding MakePledgeCommand}"
-                    IsVisible="{Binding HasPledgedToday, Converter={StaticResource InverseBoolConverter}}"
-                    SemanticProperties.Description="Fazer compromisso diário de sobriedade" />
-
-            <Border StrokeThickness="1"
-                    Stroke="{StaticResource BgBorder}"
-                    BackgroundColor="{StaticResource BgSurface}"
-                    Padding="14,16"
-                    StrokeShape="RoundRectangle 16"
+            <!-- Daily pledge — JÁ fez -->
+            <Border Stroke="#1A2E1F" StrokeThickness="1"
+                    BackgroundColor="#111D17"
+                    Padding="14"
+                    Margin="16,0,16,10"
+                    StrokeShape="RoundRectangle 16,16,16,16"
                     IsVisible="{Binding HasPledgedToday}">
-                <Label Text="&#x2705; Compromisso feito hoje"
-                       TextColor="{StaticResource Success}"
-                       FontSize="16"
-                       HorizontalTextAlignment="Center" />
+                <VerticalStackLayout HorizontalOptions="Center" Spacing="4">
+                    <Label Text="&#x2705; Compromisso feito hoje"
+                           FontSize="14" FontAttributes="Bold" TextColor="#27AE60"
+                           HorizontalTextAlignment="Center" />
+                    <Label Text="&quot;Só por hoje, eu não vou beber.&quot;"
+                           FontSize="12" TextColor="#49596B" FontAttributes="Italic"
+                           HorizontalTextAlignment="Center" />
+                </VerticalStackLayout>
             </Border>
 
-            <!-- e) Personal reason -->
-            <Border StrokeThickness="1"
-                    Stroke="{StaticResource BgBorder}"
-                    BackgroundColor="{StaticResource BgSurface}"
-                    Padding="14,16"
-                    StrokeShape="RoundRectangle 16">
-                <VerticalStackLayout Spacing="10">
-                    <Label Text="Meu motivo"
-                           FontSize="16"
-                           FontAttributes="Bold"
-                           TextColor="{StaticResource TextPrimary}"
-                           SemanticProperties.HeadingLevel="Level3" />
+            <!-- e) Personal reason — quando está VAZIO -->
+            <Border Stroke="#1D2C3C" StrokeThickness="1"
+                    BackgroundColor="#131D28" Padding="16,14"
+                    Margin="16,0,16,10"
+                    StrokeShape="RoundRectangle 16,16,16,16"
+                    IsVisible="{Binding IsReasonEditing}">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="&#x1F511; MEU MOTIVO" FontSize="11" FontAttributes="Bold"
+                           TextColor="#D4A017" CharacterSpacing="1" />
+                    <Label Text="Por que você parou de beber? Escreva aqui. Quando a fissura bater, releia."
+                           FontSize="12" TextColor="#8A9AAE" LineHeight="1.4" />
+                    <Editor Placeholder="Ex: Pela minha filha. Para ter uma vida de verdade."
+                            PlaceholderColor="#49596B"
+                            TextColor="#E2E8F0" FontSize="14"
+                            BackgroundColor="#0C1219"
+                            HeightRequest="60"
+                            Text="{Binding PersonalReason}" />
+                    <Button Text="Salvar"
+                            BackgroundColor="#3A8AC5" TextColor="White"
+                            CornerRadius="10" HeightRequest="40"
+                            FontSize="13" FontAttributes="Bold"
+                            HorizontalOptions="End"
+                            Command="{Binding SaveReasonCommand}" />
+                </VerticalStackLayout>
+            </Border>
 
-                    <!-- No reason yet or editing -->
-                    <VerticalStackLayout Spacing="8"
-                                         IsVisible="{Binding IsReasonEditing}">
-                        <Editor Text="{Binding PersonalReason}"
-                                Placeholder="Por que você quer ficar sóbrio?"
-                                PlaceholderColor="{StaticResource TextMuted}"
-                                TextColor="{StaticResource TextPrimary}"
-                                BackgroundColor="{StaticResource BgSurfaceLight}"
-                                MinimumHeightRequest="80"
-                                AutoSize="TextChanges" />
-                        <Button Text="Salvar"
-                                BackgroundColor="{StaticResource Accent}"
-                                TextColor="{StaticResource TextPrimary}"
-                                CornerRadius="16"
-                                HeightRequest="44"
-                                FontSize="14"
-                                MinimumWidthRequest="44"
-                                Command="{Binding SaveReasonCommand}"
-                                SemanticProperties.Description="Salvar motivo pessoal" />
+            <!-- Personal reason — quando está PREENCHIDO (não editando) -->
+            <Border Stroke="#1D2C3C" StrokeThickness="1"
+                    BackgroundColor="#131D28" Padding="16,14"
+                    Margin="16,0,16,10"
+                    StrokeShape="RoundRectangle 16,16,16,16"
+                    IsVisible="{Binding IsReasonEditing, Converter={StaticResource InverseBoolConverter}}">
+                <VerticalStackLayout Spacing="6">
+                    <!-- Tem motivo salvo -->
+                    <VerticalStackLayout Spacing="6"
+                                         IsVisible="{Binding PersonalReason, Converter={StaticResource StringToBoolConverter}}">
+                        <Grid ColumnDefinitions="*,Auto">
+                            <Label Text="&#x1F511; MEU MOTIVO" FontSize="11" FontAttributes="Bold"
+                                   TextColor="#D4A017" CharacterSpacing="1" />
+                            <Label Grid.Column="1" Text="editar" FontSize="10" TextColor="#49596B">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ToggleReasonEditCommand}" />
+                                </Label.GestureRecognizers>
+                            </Label>
+                        </Grid>
+                        <Label Text="{Binding PersonalReason, StringFormat='&quot;{0}&quot;'}"
+                               FontSize="15" TextColor="#E2E8F0" FontAttributes="Italic"
+                               LineHeight="1.5" />
                     </VerticalStackLayout>
 
-                    <!-- Has reason, not editing -->
+                    <!-- Não tem motivo ainda -->
                     <VerticalStackLayout Spacing="8"
-                                         IsVisible="{Binding IsReasonEditing, Converter={StaticResource InverseBoolConverter}}">
-                        <Label Text="{Binding PersonalReason}"
-                               TextColor="{StaticResource TextSecondary}"
-                               FontAttributes="Italic"
-                               FontSize="14"
-                               IsVisible="{Binding PersonalReason, Converter={StaticResource StringToBoolConverter}}" />
-                        <Label Text="editar"
-                               TextColor="{StaticResource Accent}"
-                               FontSize="13"
-                               TextDecorations="Underline"
-                               IsVisible="{Binding PersonalReason, Converter={StaticResource StringToBoolConverter}}">
-                            <Label.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding ToggleReasonEditCommand}" />
-                            </Label.GestureRecognizers>
-                        </Label>
-                        <!-- No reason yet -->
+                                         IsVisible="{Binding PersonalReason, Converter={StaticResource StringToBoolConverter}, ConverterParameter=invert}">
+                        <Label Text="&#x1F511; MEU MOTIVO" FontSize="11" FontAttributes="Bold"
+                               TextColor="#D4A017" CharacterSpacing="1" />
+                        <Label Text="Por que você quer ficar sóbrio? Anote aqui."
+                               FontSize="12" TextColor="#8A9AAE" />
                         <Button Text="Adicionar motivo"
-                                BackgroundColor="{StaticResource Accent}"
-                                TextColor="{StaticResource TextPrimary}"
-                                CornerRadius="16"
-                                HeightRequest="44"
-                                FontSize="14"
-                                MinimumWidthRequest="44"
-                                Command="{Binding ToggleReasonEditCommand}"
-                                IsVisible="{Binding PersonalReason, Converter={StaticResource StringToBoolConverter}, ConverterParameter=invert}"
-                                SemanticProperties.Description="Adicionar motivo pessoal" />
+                                BackgroundColor="#3A8AC5" TextColor="White"
+                                CornerRadius="10" HeightRequest="40"
+                                FontSize="13" FontAttributes="Bold"
+                                Command="{Binding ToggleReasonEditCommand}" />
                     </VerticalStackLayout>
                 </VerticalStackLayout>
             </Border>
 
             <!-- f) Daily reflection -->
-            <Border StrokeThickness="1"
-                    Stroke="{StaticResource BgBorder}"
-                    BackgroundColor="{StaticResource BgSurface}"
-                    Padding="14,16"
-                    StrokeShape="RoundRectangle 16">
-                <VerticalStackLayout Spacing="10">
-                    <Label Text="{Binding ReflectionTitle}"
-                           FontSize="16"
-                           FontAttributes="Bold"
-                           TextColor="{StaticResource Warm}"
-                           SemanticProperties.HeadingLevel="Level3" />
+            <Border Stroke="#1D2C3C" StrokeThickness="1"
+                    BackgroundColor="#131D28" Padding="16,14"
+                    Margin="16,0,16,10"
+                    StrokeShape="RoundRectangle 16,16,16,16">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ToggleReflectionCommand}" />
+                </Border.GestureRecognizers>
+                <VerticalStackLayout Spacing="8">
+                    <!-- Seção -->
+                    <Label Text="REFLEXÃO DO DIA"
+                           FontSize="11" FontAttributes="Bold"
+                           TextColor="#3A8AC5" CharacterSpacing="1" />
 
+                    <!-- Título -->
+                    <Label Text="{Binding ReflectionTitle}"
+                           FontSize="17" FontAttributes="Bold"
+                           TextColor="#D4A017" LineHeight="1.3" />
+
+                    <!-- Citação -->
                     <Label Text="{Binding ReflectionQuote}"
                            FontAttributes="Italic"
-                           TextColor="{StaticResource TextPrimary}"
-                           FontSize="14" />
+                           TextColor="#8A9AAE" FontSize="13"
+                           LineHeight="1.5" />
 
+                    <!-- Referência -->
                     <Label Text="{Binding ReflectionReference}"
-                           TextColor="{StaticResource TextMuted}"
-                           FontSize="12" />
+                           TextColor="#49596B" FontSize="10" />
 
-                    <Button Text="&#x25BC; Ler reflexão completa"
-                            BackgroundColor="Transparent"
-                            TextColor="{StaticResource Accent}"
-                            FontSize="14"
-                            HeightRequest="44"
-                            MinimumHeightRequest="44"
-                            MinimumWidthRequest="44"
-                            Command="{Binding ToggleReflectionCommand}"
-                            IsVisible="{Binding IsReflectionExpanded, Converter={StaticResource InverseBoolConverter}}"
-                            SemanticProperties.Description="Expandir reflexão completa" />
+                    <!-- Expandir -->
+                    <Label Text="&#x25BC; Ler reflexão completa"
+                           TextColor="#3A8AC5" FontSize="12"
+                           IsVisible="{Binding IsReflectionExpanded, Converter={StaticResource InverseBoolConverter}}"
+                           Padding="0,4" />
 
+                    <!-- Texto completo -->
                     <Label Text="{Binding ReflectionText}"
-                           TextColor="{StaticResource TextSecondary}"
-                           FontSize="14"
+                           TextColor="#8A9AAE" FontSize="13"
+                           LineHeight="1.6"
                            IsVisible="{Binding IsReflectionExpanded}" />
 
-                    <Button Text="&#x25B2; Recolher"
-                            BackgroundColor="Transparent"
-                            TextColor="{StaticResource Accent}"
-                            FontSize="14"
-                            HeightRequest="44"
-                            MinimumHeightRequest="44"
-                            MinimumWidthRequest="44"
-                            Command="{Binding ToggleReflectionCommand}"
-                            IsVisible="{Binding IsReflectionExpanded}"
-                            SemanticProperties.Description="Recolher reflexão" />
+                    <!-- Recolher -->
+                    <Label Text="&#x25B2; Recolher"
+                           TextColor="#3A8AC5" FontSize="12"
+                           IsVisible="{Binding IsReflectionExpanded}"
+                           Padding="0,4" />
                 </VerticalStackLayout>
             </Border>
 
             <!-- g) Serenity prayer -->
-            <Border StrokeThickness="1"
-                    Stroke="{StaticResource BgBorder}"
-                    BackgroundColor="{StaticResource BgSurface}"
-                    Padding="14,16"
-                    StrokeShape="RoundRectangle 16">
-                <Label Text="{Binding SerenityPrayer}"
-                       TextColor="{StaticResource TextSecondary}"
-                       FontAttributes="Italic"
-                       FontSize="14"
-                       HorizontalTextAlignment="Center" />
+            <Border Stroke="#1D2C3C" StrokeThickness="1"
+                    BackgroundColor="#131D28" Padding="16,12"
+                    Margin="16,0,16,10"
+                    StrokeShape="RoundRectangle 16,16,16,16">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="ORAÇÃO DA SERENIDADE"
+                           FontSize="10" FontAttributes="Bold"
+                           TextColor="#D4A017" CharacterSpacing="1"
+                           HorizontalTextAlignment="Center" />
+                    <Label Text="{Binding SerenityPrayer}"
+                           TextColor="#8A9AAE" FontAttributes="Italic"
+                           FontSize="13" HorizontalTextAlignment="Center"
+                           LineHeight="1.5" />
+                </VerticalStackLayout>
             </Border>
 
             <!-- h) Footer -->
             <Label Text="EVITE O PRIMEIRO GOLE"
-                   FontSize="11"
-                   TextColor="{StaticResource TextMuted}"
+                   FontSize="11" TextColor="#49596B"
                    HorizontalTextAlignment="Center"
-                   Margin="0,8,0,24" />
+                   CharacterSpacing="2"
+                   Margin="0,8,0,0" />
 
         </VerticalStackLayout>
     </ScrollView>

@@ -1,4 +1,5 @@
 using System.Collections.ObjectModel;
+using System.Globalization;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using SoPorHoje.App.Models;
@@ -13,11 +14,17 @@ public partial class MeetingsViewModel : BaseViewModel
     public MeetingsViewModel(MeetingService meetingService)
     {
         _meetingService = meetingService;
-        Title = "Reunioes";
+        Title = "Reuniões";
     }
 
     [ObservableProperty]
-    private ObservableCollection<OnlineMeeting> _meetings = new();
+    private ObservableCollection<MeetingGroup> _meetingGroups = new();
+
+    [ObservableProperty]
+    private string _todayLabel = "";
+
+    [ObservableProperty]
+    private bool _hasMeetings;
 
     [RelayCommand]
     private async Task LoadMeetingsAsync()
@@ -28,8 +35,11 @@ public partial class MeetingsViewModel : BaseViewModel
         {
             IsBusy = true;
 
-            var list = await _meetingService.GetSortedMeetingsAsync();
-            Meetings = new ObservableCollection<OnlineMeeting>(list);
+            TodayLabel = DateTime.Now.ToString("dddd, dd 'de' MMMM", new CultureInfo("pt-BR"));
+
+            var groups = await _meetingService.GetAllMeetingsGroupedAsync();
+            MeetingGroups = new ObservableCollection<MeetingGroup>(groups);
+            HasMeetings = groups.Count > 0;
         }
         finally
         {
@@ -41,13 +51,13 @@ public partial class MeetingsViewModel : BaseViewModel
     private async Task JoinMeetingAsync(OnlineMeeting meeting)
     {
         if (meeting is null || string.IsNullOrEmpty(meeting.MeetingUrl)) return;
-        await Launcher.OpenAsync(new Uri(meeting.MeetingUrl));
-    }
-
-    [RelayCommand]
-    private async Task OpenLinkAsync(string? url)
-    {
-        if (string.IsNullOrEmpty(url)) return;
-        await Launcher.OpenAsync(new Uri(url));
+        try
+        {
+            await Launcher.OpenAsync(new Uri(meeting.MeetingUrl));
+        }
+        catch (Exception)
+        {
+            await Shell.Current.DisplayAlert("Erro", "Não foi possível abrir o link da reunião.", "OK");
+        }
     }
 }

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:SoPorHoje.App.ViewModels"
+             xmlns:conv="clr-namespace:SoPorHoje.App.Converters"
+             x:Class="SoPorHoje.App.Views.LiteraturePage"
+             x:DataType="vm:LiteratureViewModel"
+             BackgroundColor="#0C1219"
+             Shell.NavBarIsVisible="False"
+             Title="Literaturas">
+
+    <ContentPage.Resources>
+        <conv:InverseBoolConverter x:Key="InverseBoolConverter" />
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="0,8,0,24" Spacing="0">
+
+            <!-- Header -->
+            <VerticalStackLayout Margin="16,8,16,14" Spacing="2">
+                <Label Text="Literaturas"
+                       FontSize="22" FontAttributes="Bold"
+                       TextColor="#E2E8F0" />
+                <Label Text="Textos do programa de recuperação"
+                       FontSize="13" TextColor="#49596B" />
+            </VerticalStackLayout>
+
+            <!-- Card do texto sorteado -->
+            <Border Stroke="#1D2C3C" StrokeThickness="1"
+                    BackgroundColor="#131D28"
+                    Padding="16,16" Margin="16,0,16,12"
+                    StrokeShape="RoundRectangle 16,16,16,16"
+                    IsVisible="{Binding HasText}">
+                <VerticalStackLayout Spacing="12">
+
+                    <!-- Livro + capítulo badge -->
+                    <Grid ColumnDefinitions="*,Auto">
+                        <Label Text="{Binding BookTitle}"
+                               FontSize="11" FontAttributes="Bold"
+                               TextColor="#3A8AC5" CharacterSpacing="0.5"
+                               VerticalOptions="Center" />
+                        <Border Grid.Column="1"
+                                BackgroundColor="#192736" StrokeThickness="0"
+                                Padding="8,3" StrokeShape="RoundRectangle 8,8,8,8">
+                            <Label Text="{Binding TextNumber}"
+                                   FontSize="10" TextColor="#8A9AAE" />
+                        </Border>
+                    </Grid>
+
+                    <!-- Título -->
+                    <Label Text="{Binding TextTitle}"
+                           FontSize="19" FontAttributes="Bold"
+                           TextColor="#D4A017" LineHeight="1.3" />
+
+                    <BoxView HeightRequest="1" BackgroundColor="#1D2C3C" Margin="0,2" />
+
+                    <!-- Resumo sempre visível -->
+                    <Label Text="{Binding ShortText}"
+                           FontSize="14" TextColor="#E2E8F0"
+                           LineHeight="1.65" />
+
+                    <!-- Expandir -->
+                    <Label Text="&#x25BC; Ler texto completo"
+                           TextColor="#3A8AC5" FontSize="13" Padding="0,2"
+                           IsVisible="{Binding IsExpanded, Converter={StaticResource InverseBoolConverter}}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ToggleExpandCommand}" />
+                        </Label.GestureRecognizers>
+                    </Label>
+
+                    <!-- Texto completo -->
+                    <Label Text="{Binding FullText}"
+                           FontSize="14" TextColor="#8A9AAE"
+                           LineHeight="1.65"
+                           IsVisible="{Binding IsExpanded}" />
+
+                    <!-- Recolher -->
+                    <Label Text="&#x25B2; Recolher"
+                           TextColor="#3A8AC5" FontSize="13" Padding="0,2"
+                           IsVisible="{Binding IsExpanded}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ToggleExpandCommand}" />
+                        </Label.GestureRecognizers>
+                    </Label>
+
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Progresso do ciclo -->
+            <Label Text="{Binding ProgressLabel}"
+                   FontSize="11" TextColor="#49596B"
+                   HorizontalTextAlignment="Center"
+                   Margin="16,0,16,12"
+                   IsVisible="{Binding HasText}" />
+
+            <!-- Botão sortear -->
+            <Button Text="Próximo texto"
+                    BackgroundColor="#3A8AC5" TextColor="White"
+                    CornerRadius="14" HeightRequest="50"
+                    FontSize="15" FontAttributes="Bold"
+                    Margin="16,0,16,0"
+                    Command="{Binding DrawNewTextCommand}" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

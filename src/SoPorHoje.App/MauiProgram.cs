@@ -22,6 +22,7 @@ public static class MauiProgram
         builder.Services.AddSingleton<DatabaseService>();
         builder.Services.AddSingleton<ChipService>();
         builder.Services.AddSingleton<MeetingService>();
+        builder.Services.AddSingleton<LiteratureService>();
 
         // ViewModels
         builder.Services.AddTransient<OnboardingViewModel>();
@@ -36,6 +37,7 @@ public static class MauiProgram
         builder.Services.AddTransient<JustForTodayViewModel>();
         builder.Services.AddTransient<PrayersViewModel>();
         builder.Services.AddTransient<HaltCheckViewModel>();
+        builder.Services.AddTransient<LiteratureViewModel>();
 
         // Pages
         builder.Services.AddTransient<OnboardingPage>();
@@ -50,6 +52,7 @@ public static class MauiProgram
         builder.Services.AddTransient<JustForTodayPage>();
         builder.Services.AddTransient<PrayersPage>();
         builder.Services.AddTransient<HaltCheckPage>();
+        builder.Services.AddTransient<LiteraturePage>();
 
 #if DEBUG
         builder.Logging.AddDebug();

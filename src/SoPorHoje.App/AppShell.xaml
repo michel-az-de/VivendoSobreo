@@ -14,21 +14,25 @@
     Shell.TabBarUnselectedColor="#49596B"
     Shell.NavBarHasShadow="False">
 
-    <TabBar x:Name="MainTabs">
+    <TabBar>
         <ShellContent
             Title="Hoje"
+            Icon="tab_home"
             ContentTemplate="{DataTemplate views:HomePage}"
             Route="home" />
         <ShellContent
             Title="Fichas"
+            Icon="tab_chips"
             ContentTemplate="{DataTemplate views:ChipsPage}"
             Route="chips" />
         <ShellContent
             Title="Reuniões"
+            Icon="tab_meetings"
             ContentTemplate="{DataTemplate views:MeetingsPage}"
             Route="meetings" />
         <ShellContent
             Title="Programa"
+            Icon="tab_program"
             ContentTemplate="{DataTemplate views:ProgramPage}"
             Route="program" />
     </TabBar>

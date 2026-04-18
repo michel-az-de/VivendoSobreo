@@ -6,35 +6,39 @@
              xmlns:conv="clr-namespace:SoPorHoje.App.Converters"
              x:Class="SoPorHoje.App.Views.ChipsPage"
              x:DataType="vm:ChipsViewModel"
-             BackgroundColor="{StaticResource BgPrimary}"
+             BackgroundColor="#0C1219"
+             Shell.NavBarIsVisible="False"
              Title="Fichas">
 
     <ContentPage.Resources>
         <conv:BoolToOpacityConverter x:Key="BoolToOpacityConverter" />
     </ContentPage.Resources>
 
-    <Grid RowDefinitions="Auto,*" Padding="16" RowSpacing="16">
+    <Grid RowDefinitions="Auto,*" RowSpacing="0">
 
         <!-- Header -->
-        <VerticalStackLayout Grid.Row="0" Spacing="8">
+        <VerticalStackLayout Grid.Row="0" Spacing="6" Margin="16,8,16,12">
             <Label Text="Minhas Fichas"
-                   FontSize="24"
-                   FontAttributes="Bold"
-                   TextColor="{StaticResource TextPrimary}"
-                   SemanticProperties.HeadingLevel="Level1" />
+                   FontSize="22" FontAttributes="Bold"
+                   TextColor="#E2E8F0" />
 
-            <Label TextColor="{StaticResource TextSecondary}" FontSize="14">
+            <Label TextColor="#8A9AAE" FontSize="14">
                 <Label.FormattedText>
                     <FormattedString>
-                        <Span Text="{Binding EarnedCount}" FontAttributes="Bold" TextColor="{StaticResource TextPrimary}" />
+                        <Span Text="{Binding EarnedCount}" FontAttributes="Bold" TextColor="#E2E8F0" />
                         <Span Text=" de 10 conquistadas" />
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
 
-            <ProgressBar Progress="{Binding OverallProgress}"
-                         ProgressColor="{StaticResource Accent}"
-                         HeightRequest="8" />
+            <Border HeightRequest="4" Margin="0,4,0,0"
+                    StrokeThickness="0"
+                    BackgroundColor="#1D2C3C"
+                    StrokeShape="RoundRectangle 2,2,2,2">
+                <ProgressBar Progress="{Binding OverallProgress}"
+                             ProgressColor="#3A8AC5"
+                             HeightRequest="4" />
+            </Border>
         </VerticalStackLayout>
 
         <!-- Chips list -->
@@ -42,26 +46,22 @@
                          ItemsSource="{Binding Chips}">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="models:SobrietyChip">
-                    <Border StrokeThickness="1"
-                            Stroke="{StaticResource BgBorder}"
-                            BackgroundColor="{StaticResource BgSurface}"
-                            Padding="14,16"
-                            Margin="0,4"
-                            StrokeShape="RoundRectangle 16"
+                    <Border Stroke="#1D2C3C" StrokeThickness="1"
+                            BackgroundColor="#131D28"
+                            Padding="14"
+                            Margin="16,0,16,8"
+                            StrokeShape="RoundRectangle 16,16,16,16"
                             Opacity="{Binding IsEarned, Converter={StaticResource BoolToOpacityConverter}}">
-                        <Grid ColumnDefinitions="56,*,Auto" ColumnSpacing="12">
-                            <!-- Emoji -->
+                        <Grid ColumnDefinitions="52,*,Auto" ColumnSpacing="12">
+                            <!-- Emoji with chip color -->
                             <Frame Grid.Column="0"
-                                   WidthRequest="48"
-                                   HeightRequest="48"
-                                   CornerRadius="24"
-                                   BackgroundColor="{StaticResource BgSurfaceLight}"
-                                   Padding="0"
-                                   HasShadow="False"
-                                   HorizontalOptions="Center"
-                                   VerticalOptions="Center">
+                                   WidthRequest="44" HeightRequest="44"
+                                   CornerRadius="22"
+                                   BackgroundColor="{Binding BgColor}"
+                                   Padding="0" HasShadow="False"
+                                   HorizontalOptions="Center" VerticalOptions="Center">
                                 <Label Text="{Binding Emoji}"
-                                       FontSize="24"
+                                       FontSize="22"
                                        HorizontalOptions="Center"
                                        VerticalOptions="Center" />
                             </Frame>
@@ -69,13 +69,11 @@
                             <!-- Info -->
                             <VerticalStackLayout Grid.Column="1" VerticalOptions="Center" Spacing="2">
                                 <Label Text="{Binding Name}"
-                                       FontSize="16"
-                                       FontAttributes="Bold"
-                                       TextColor="{StaticResource TextPrimary}" />
+                                       FontSize="15" FontAttributes="Bold"
+                                       TextColor="#E2E8F0" />
                                 <Label Text="{Binding Label}"
-                                       FontSize="13"
-                                       TextColor="{StaticResource TextSecondary}" />
-                                <Label FontSize="12" TextColor="{StaticResource TextMuted}">
+                                       FontSize="12" TextColor="#8A9AAE" />
+                                <Label FontSize="11" TextColor="#49596B">
                                     <Label.FormattedText>
                                         <FormattedString>
                                             <Span Text="{Binding RequiredDays}" />
@@ -88,7 +86,7 @@
                             <!-- Status -->
                             <Label Grid.Column="2"
                                    VerticalOptions="Center"
-                                   FontSize="20"
+                                   FontSize="18"
                                    HorizontalOptions="End">
                                 <Label.Triggers>
                                     <DataTrigger TargetType="Label"

@@ -4,163 +4,144 @@
              xmlns:vm="clr-namespace:SoPorHoje.App.ViewModels"
              x:Class="SoPorHoje.App.Views.ProgramPage"
              x:DataType="vm:ProgramViewModel"
-             BackgroundColor="{StaticResource BgPrimary}"
+             BackgroundColor="#0C1219"
+             Shell.NavBarIsVisible="False"
              Title="Programa">
 
     <ScrollView>
-        <VerticalStackLayout Padding="16" Spacing="12">
+        <VerticalStackLayout Padding="0,12,0,30" Spacing="0">
 
             <Label Text="Programa"
-                   FontSize="24"
-                   FontAttributes="Bold"
-                   TextColor="{StaticResource TextPrimary}"
-                   SemanticProperties.HeadingLevel="Level1" />
+                   FontSize="22" FontAttributes="Bold"
+                   TextColor="#E2E8F0"
+                   Margin="16,0,16,12" />
 
-            <!-- 12 Steps -->
-            <Border StrokeThickness="1"
-                    Stroke="{StaticResource BgBorder}"
-                    BackgroundColor="{StaticResource BgSurface}"
-                    Padding="14,16"
-                    StrokeShape="RoundRectangle 16"
-                    MinimumHeightRequest="44">
+            <!-- Literaturas (destaque) -->
+            <Border Stroke="#1D2C3C" StrokeThickness="1"
+                    BackgroundColor="#131D28"
+                    Padding="14"
+                    Margin="16,0,16,10"
+                    StrokeShape="RoundRectangle 14,14,14,14">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding GoToLiteratureCommand}" />
+                </Border.GestureRecognizers>
+                <HorizontalStackLayout Spacing="12" VerticalOptions="Center">
+                    <Label Text="&#x1F4DA;" FontSize="28" VerticalOptions="Center" />
+                    <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                        <Label Text="Literaturas" FontSize="15" FontAttributes="Bold" TextColor="#E2E8F0" />
+                        <Label Text="Textos do programa — sorteio" FontSize="12" TextColor="#8A9AAE" />
+                    </VerticalStackLayout>
+                    <Label Text="&#x276F;" FontSize="16" TextColor="#49596B" VerticalOptions="Center" />
+                </HorizontalStackLayout>
+            </Border>
+
+            <!-- 12 Passos -->
+            <Border Stroke="#1D2C3C" StrokeThickness="1"
+                    BackgroundColor="#131D28" Padding="14"
+                    Margin="16,0,16,10"
+                    StrokeShape="RoundRectangle 14,14,14,14">
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding GoToStepsCommand}" />
                 </Border.GestureRecognizers>
                 <HorizontalStackLayout Spacing="12" VerticalOptions="Center">
                     <Label Text="&#x1F4D6;" FontSize="28" VerticalOptions="Center" />
-                    <VerticalStackLayout VerticalOptions="Center">
-                        <Label Text="12 Passos"
-                               FontSize="16"
-                               FontAttributes="Bold"
-                               TextColor="{StaticResource TextPrimary}" />
-                        <Label Text="Os passos da recuperação"
-                               FontSize="13"
-                               TextColor="{StaticResource TextSecondary}" />
+                    <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                        <Label Text="12 Passos" FontSize="15" FontAttributes="Bold" TextColor="#E2E8F0" />
+                        <Label Text="Os passos da recuperação" FontSize="12" TextColor="#8A9AAE" />
                     </VerticalStackLayout>
+                    <Label Text="&#x276F;" FontSize="16" TextColor="#49596B" VerticalOptions="Center" />
                 </HorizontalStackLayout>
             </Border>
 
-            <!-- 12 Traditions -->
-            <Border StrokeThickness="1"
-                    Stroke="{StaticResource BgBorder}"
-                    BackgroundColor="{StaticResource BgSurface}"
-                    Padding="14,16"
-                    StrokeShape="RoundRectangle 16"
-                    MinimumHeightRequest="44">
+            <!-- 12 Tradições -->
+            <Border Stroke="#1D2C3C" StrokeThickness="1"
+                    BackgroundColor="#131D28" Padding="14"
+                    Margin="16,0,16,10"
+                    StrokeShape="RoundRectangle 14,14,14,14">
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding GoToTraditionsCommand}" />
                 </Border.GestureRecognizers>
                 <HorizontalStackLayout Spacing="12" VerticalOptions="Center">
                     <Label Text="&#x1F4DC;" FontSize="28" VerticalOptions="Center" />
-                    <VerticalStackLayout VerticalOptions="Center">
-                        <Label Text="12 Tradições"
-                               FontSize="16"
-                               FontAttributes="Bold"
-                               TextColor="{StaticResource TextPrimary}" />
-                        <Label Text="As tradições da irmandade"
-                               FontSize="13"
-                               TextColor="{StaticResource TextSecondary}" />
+                    <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                        <Label Text="12 Tradições" FontSize="15" FontAttributes="Bold" TextColor="#E2E8F0" />
+                        <Label Text="As tradições da irmandade" FontSize="12" TextColor="#8A9AAE" />
                     </VerticalStackLayout>
+                    <Label Text="&#x276F;" FontSize="16" TextColor="#49596B" VerticalOptions="Center" />
                 </HorizontalStackLayout>
             </Border>
 
-            <!-- Promises -->
-            <Border StrokeThickness="1"
-                    Stroke="{StaticResource BgBorder}"
-                    BackgroundColor="{StaticResource BgSurface}"
-                    Padding="14,16"
-                    StrokeShape="RoundRectangle 16"
-                    MinimumHeightRequest="44">
+            <!-- Promessas -->
+            <Border Stroke="#1D2C3C" StrokeThickness="1"
+                    BackgroundColor="#131D28" Padding="14"
+                    Margin="16,0,16,10"
+                    StrokeShape="RoundRectangle 14,14,14,14">
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding GoToPromisesCommand}" />
                 </Border.GestureRecognizers>
                 <HorizontalStackLayout Spacing="12" VerticalOptions="Center">
                     <Label Text="&#x1F31F;" FontSize="28" VerticalOptions="Center" />
-                    <VerticalStackLayout VerticalOptions="Center">
-                        <Label Text="Promessas"
-                               FontSize="16"
-                               FontAttributes="Bold"
-                               TextColor="{StaticResource TextPrimary}" />
-                        <Label Text="As promessas de A.A."
-                               FontSize="13"
-                               TextColor="{StaticResource TextSecondary}" />
+                    <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                        <Label Text="Promessas" FontSize="15" FontAttributes="Bold" TextColor="#E2E8F0" />
+                        <Label Text="As promessas de A.A." FontSize="12" TextColor="#8A9AAE" />
                     </VerticalStackLayout>
+                    <Label Text="&#x276F;" FontSize="16" TextColor="#49596B" VerticalOptions="Center" />
                 </HorizontalStackLayout>
             </Border>
 
-            <!-- Just For Today -->
-            <Border StrokeThickness="1"
-                    Stroke="{StaticResource BgBorder}"
-                    BackgroundColor="{StaticResource BgSurface}"
-                    Padding="14,16"
-                    StrokeShape="RoundRectangle 16"
-                    MinimumHeightRequest="44">
+            <!-- Só Por Hoje -->
+            <Border Stroke="#1D2C3C" StrokeThickness="1"
+                    BackgroundColor="#131D28" Padding="14"
+                    Margin="16,0,16,10"
+                    StrokeShape="RoundRectangle 14,14,14,14">
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding GoToJustForTodayCommand}" />
                 </Border.GestureRecognizers>
                 <HorizontalStackLayout Spacing="12" VerticalOptions="Center">
                     <Label Text="&#x1F305;" FontSize="28" VerticalOptions="Center" />
-                    <VerticalStackLayout VerticalOptions="Center">
-                        <Label Text="Só Por Hoje"
-                               FontSize="16"
-                               FontAttributes="Bold"
-                               TextColor="{StaticResource TextPrimary}" />
-                        <Label Text="Meditações diárias"
-                               FontSize="13"
-                               TextColor="{StaticResource TextSecondary}" />
+                    <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                        <Label Text="Só Por Hoje" FontSize="15" FontAttributes="Bold" TextColor="#E2E8F0" />
+                        <Label Text="Meditações diárias" FontSize="12" TextColor="#8A9AAE" />
                     </VerticalStackLayout>
+                    <Label Text="&#x276F;" FontSize="16" TextColor="#49596B" VerticalOptions="Center" />
                 </HorizontalStackLayout>
             </Border>
 
-            <!-- Prayers -->
-            <Border StrokeThickness="1"
-                    Stroke="{StaticResource BgBorder}"
-                    BackgroundColor="{StaticResource BgSurface}"
-                    Padding="14,16"
-                    StrokeShape="RoundRectangle 16"
-                    MinimumHeightRequest="44">
+            <!-- Orações -->
+            <Border Stroke="#1D2C3C" StrokeThickness="1"
+                    BackgroundColor="#131D28" Padding="14"
+                    Margin="16,0,16,10"
+                    StrokeShape="RoundRectangle 14,14,14,14">
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding GoToPrayersCommand}" />
                 </Border.GestureRecognizers>
                 <HorizontalStackLayout Spacing="12" VerticalOptions="Center">
                     <Label Text="&#x1F64F;" FontSize="28" VerticalOptions="Center" />
-                    <VerticalStackLayout VerticalOptions="Center">
-                        <Label Text="Orações"
-                               FontSize="16"
-                               FontAttributes="Bold"
-                               TextColor="{StaticResource TextPrimary}" />
-                        <Label Text="Orações do programa"
-                               FontSize="13"
-                               TextColor="{StaticResource TextSecondary}" />
+                    <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                        <Label Text="Orações" FontSize="15" FontAttributes="Bold" TextColor="#E2E8F0" />
+                        <Label Text="Orações do programa" FontSize="12" TextColor="#8A9AAE" />
                     </VerticalStackLayout>
+                    <Label Text="&#x276F;" FontSize="16" TextColor="#49596B" VerticalOptions="Center" />
                 </HorizontalStackLayout>
             </Border>
 
-            <!-- HALT Check -->
-            <Border StrokeThickness="1"
-                    Stroke="{StaticResource BgBorder}"
-                    BackgroundColor="{StaticResource BgSurface}"
-                    Padding="14,16"
-                    StrokeShape="RoundRectangle 16"
-                    MinimumHeightRequest="44">
+            <!-- Check HALT -->
+            <Border Stroke="#1D2C3C" StrokeThickness="1"
+                    BackgroundColor="#131D28" Padding="14"
+                    Margin="16,0,16,10"
+                    StrokeShape="RoundRectangle 14,14,14,14">
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding GoToHaltCheckCommand}" />
                 </Border.GestureRecognizers>
                 <HorizontalStackLayout Spacing="12" VerticalOptions="Center">
                     <Label Text="&#x1F6A6;" FontSize="28" VerticalOptions="Center" />
-                    <VerticalStackLayout VerticalOptions="Center">
-                        <Label Text="Check HALT"
-                               FontSize="16"
-                               FontAttributes="Bold"
-                               TextColor="{StaticResource TextPrimary}" />
-                        <Label Text="Fome, Raiva, Solidão, Cansaço"
-                               FontSize="13"
-                               TextColor="{StaticResource TextSecondary}" />
+                    <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                        <Label Text="Check HALT" FontSize="15" FontAttributes="Bold" TextColor="#E2E8F0" />
+                        <Label Text="Fome, Raiva, Solidão, Cansaço" FontSize="12" TextColor="#8A9AAE" />
                     </VerticalStackLayout>
+                    <Label Text="&#x276F;" FontSize="16" TextColor="#49596B" VerticalOptions="Center" />
                 </HorizontalStackLayout>
             </Border>
-
-            <BoxView HeightRequest="16" Color="Transparent" />
 
         </VerticalStackLayout>
     </ScrollView>

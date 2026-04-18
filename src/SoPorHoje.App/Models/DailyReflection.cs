@@ -8,7 +8,7 @@ public class DailyReflection
     [PrimaryKey, AutoIncrement]
     public int Id { get; set; }
     [Indexed(Unique = true)]
-    public string DateKey { get; set; } = "";
+    public int DayOfYear { get; set; }
     public string Title { get; set; } = "";
     public string Quote { get; set; } = "";
     public string Text { get; set; } = "";

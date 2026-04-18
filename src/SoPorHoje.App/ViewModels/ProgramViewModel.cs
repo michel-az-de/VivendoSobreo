@@ -44,4 +44,10 @@ public partial class ProgramViewModel : BaseViewModel
     {
         await Shell.Current.GoToAsync("halt");
     }
+
+    [RelayCommand]
+    private async Task GoToLiteratureAsync()
+    {
+        await Shell.Current.GoToAsync("literature");
+    }
 }
