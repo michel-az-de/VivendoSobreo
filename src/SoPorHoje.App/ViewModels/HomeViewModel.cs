@@ -246,6 +246,41 @@ public partial class HomeViewModel : BaseViewModel
     }
 
     [RelayCommand]
+    private async Task EditSobrietyDateAsync()
+    {
+        if (_profile is null) return;
+
+        var currentDate = _profile.SobrietyDate;
+        var result = await Shell.Current.DisplayPromptAsync(
+            "Alterar data de sobriedade",
+            $"Data atual: {currentDate:dd/MM/yyyy}\nDigite a nova data (dd/MM/yyyy):",
+            "Salvar", "Cancelar",
+            placeholder: "dd/MM/yyyy",
+            keyboard: Keyboard.Numeric);
+
+        if (string.IsNullOrEmpty(result)) return;
+
+        if (DateTime.TryParseExact(result, "dd/MM/yyyy",
+            System.Globalization.CultureInfo.InvariantCulture,
+            System.Globalization.DateTimeStyles.None, out var newDate))
+        {
+            if (newDate > DateTime.Today)
+            {
+                await Shell.Current.DisplayAlert("Erro", "A data não pode ser no futuro.", "OK");
+                return;
+            }
+
+            _profile.SobrietyDate = newDate;
+            await _databaseService.SaveProfileAsync(_profile);
+            await LoadDataAsync();
+        }
+        else
+        {
+            await Shell.Current.DisplayAlert("Erro", "Formato inválido. Use dd/MM/yyyy.", "OK");
+        }
+    }
+
+    [RelayCommand]
     private async Task JoinLiveMeetingAsync()
     {
         if (!string.IsNullOrEmpty(_liveMeetingUrl))
