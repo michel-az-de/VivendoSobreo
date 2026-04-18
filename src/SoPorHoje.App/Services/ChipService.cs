@@ -30,6 +30,7 @@ public class ChipService
                 ChipColor = c.Color,
                 BgColor = c.BgColor,
                 Emoji = c.Emoji,
+                ShortLabel = c.ShortLabel,
                 IsEarned = isEarned,
                 CelebrationShown = earnedSet.ContainsKey(c.Days) && earnedSet[c.Days].CelebrationShown,
             };
@@ -55,12 +56,13 @@ public class ChipService
             ChipColor = def.Color,
             BgColor = def.BgColor,
             Emoji = def.Emoji,
+            ShortLabel = def.ShortLabel,
             IsEarned = true,
             IsCurrent = true,
         };
     }
 
-    public (int Days, string Name, string Label, string Color, string BgColor, string Emoji)? GetNextChipDef(int soberDays)
+    public (int Days, string Name, string Label, string Color, string BgColor, string Emoji, string ShortLabel)? GetNextChipDef(int soberDays)
     {
         var next = ChipDefinitions.Chips.FirstOrDefault(c => c.Days > soberDays);
         return next == default ? null : next;

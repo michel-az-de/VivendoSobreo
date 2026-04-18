@@ -8,6 +8,7 @@ public class SobrietyChip
     public string ChipColor { get; set; } = "";
     public string BgColor { get; set; } = "";
     public string Emoji { get; set; } = "";
+    public string ShortLabel { get; set; } = "";
     public bool IsEarned { get; set; }
     public bool IsCurrent { get; set; }
     public bool CelebrationShown { get; set; }

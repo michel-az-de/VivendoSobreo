@@ -53,17 +53,21 @@
                             StrokeShape="RoundRectangle 16,16,16,16"
                             Opacity="{Binding IsEarned, Converter={StaticResource BoolToOpacityConverter}}">
                         <Grid ColumnDefinitions="52,*,Auto" ColumnSpacing="12">
-                            <!-- Emoji with chip color -->
+                            <!-- Chip badge with color -->
                             <Frame Grid.Column="0"
                                    WidthRequest="44" HeightRequest="44"
                                    CornerRadius="22"
                                    BackgroundColor="{Binding BgColor}"
+                                   BorderColor="{Binding ChipColor}"
                                    Padding="0" HasShadow="False"
                                    HorizontalOptions="Center" VerticalOptions="Center">
-                                <Label Text="{Binding Emoji}"
-                                       FontSize="22"
+                                <Label Text="{Binding ShortLabel}"
+                                       FontSize="14" FontAttributes="Bold"
+                                       TextColor="{Binding ChipColor}"
                                        HorizontalOptions="Center"
-                                       VerticalOptions="Center" />
+                                       VerticalOptions="Center"
+                                       HorizontalTextAlignment="Center"
+                                       VerticalTextAlignment="Center" />
                             </Frame>
 
                             <!-- Info -->

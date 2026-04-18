@@ -126,7 +126,7 @@ public partial class HomeViewModel : BaseViewModel
             var currentChip = _chipService.GetCurrentChip(SoberDays);
             if (currentChip is not null)
             {
-                CurrentChipEmoji = currentChip.Emoji;
+                CurrentChipEmoji = currentChip.ShortLabel;
                 CurrentChipColor = currentChip.ChipColor;
                 CurrentChipName = currentChip.Name;
             }
@@ -162,12 +162,31 @@ public partial class HomeViewModel : BaseViewModel
             // Meetings
             await LoadMeetingsDataAsync();
 
-            // Check for uncelebrated chip
+            // Check for uncelebrated chip — show celebration once
             var uncelebrated = await _chipService.CheckAndRecordNewChipAsync(SoberDays);
             if (uncelebrated is not null)
             {
-                await _chipService.MarkCelebrationShownAsync(uncelebrated.ChipRequiredDays);
-                // Celebration popup can be triggered here via messaging or event
+                var chipDef = ChipDefinitions.Chips.FirstOrDefault(c => c.Days == uncelebrated.ChipRequiredDays);
+                if (chipDef != default)
+                {
+                    await _chipService.MarkCelebrationShownAsync(uncelebrated.ChipRequiredDays);
+                    await Shell.Current.DisplayAlert(
+                        "Nova Conquista!",
+                        $"Você conquistou a ficha {chipDef.Name} ({chipDef.Label})!\n\n{SoberDays} dias de sobriedade. Continue assim!",
+                        "Obrigado");
+                }
+            }
+
+            // Daily celebration — once per day
+            var todayKey = DateTime.Now.Year * 1000 + DateTime.Now.DayOfYear;
+            var lastCelebrated = Preferences.Get("last_celebrated_day", 0);
+            if (lastCelebrated != todayKey && SoberDays > 0)
+            {
+                Preferences.Set("last_celebrated_day", todayKey);
+                await Shell.Current.DisplayAlert(
+                    "Mais um dia!",
+                    $"Parabéns! Você está há {SoberDays} dias sóbrio.\n\nContinue assim, um dia de cada vez.",
+                    "Obrigado");
             }
         }
         finally

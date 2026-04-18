@@ -66,12 +66,14 @@
             <VerticalStackLayout HorizontalOptions="Center" Spacing="4" Margin="0,20,0,12">
 
                 <!-- Chip badge circular com cor da ficha -->
-                <Frame WidthRequest="48" HeightRequest="48" CornerRadius="24"
+                <Frame WidthRequest="56" HeightRequest="56" CornerRadius="28"
                        Padding="0" HasShadow="False"
-                       BackgroundColor="{Binding CurrentChipColor}"
+                       BackgroundColor="#131D28"
+                       BorderColor="{Binding CurrentChipColor}"
                        HorizontalOptions="Center">
                     <Label Text="{Binding CurrentChipEmoji}"
-                           FontSize="22"
+                           FontSize="16" FontAttributes="Bold"
+                           TextColor="{Binding CurrentChipColor}"
                            HorizontalOptions="Center" VerticalOptions="Center"
                            HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
                 </Frame>
