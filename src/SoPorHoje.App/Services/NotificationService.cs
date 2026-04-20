@@ -1,4 +1,5 @@
 using Plugin.LocalNotification;
+using Plugin.LocalNotification.AndroidOption;
 
 namespace SoPorHoje.App.Services;
 
@@ -44,8 +45,6 @@ public class NotificationService
                 Android = new AndroidOptions
                 {
                     ChannelId = "soporhoje_daily",
-                    Priority = AndroidNotificationPriority.High,
-                    IsProgressBarIndeterminate = false,
                 },
                 Schedule = new NotificationRequestSchedule
                 {
