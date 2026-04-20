@@ -15,6 +15,12 @@ public partial class HomeViewModel : BaseViewModel
     private readonly MeetingService _meetingService;
     private UserProfile? _profile;
 
+    private static readonly Dictionary<string, string> EmojiLabels = new()
+    {
+        { "😊", "Bem" }, { "😐", "Ok" }, { "😔", "Baixo" },
+        { "😤", "Irritado" }, { "😰", "Ansioso" }, { "🙏", "Grato" }
+    };
+
     public HomeViewModel(DatabaseService databaseService, ChipService chipService, MeetingService meetingService)
     {
         _databaseService = databaseService;
@@ -98,6 +104,13 @@ public partial class HomeViewModel : BaseViewModel
     [ObservableProperty]
     private string _liveMeetingEndTime = "";
 
+    // --- Mood ---
+    [ObservableProperty]
+    private string _todayMoodEmoji = "";
+
+    [ObservableProperty]
+    private string _todayMoodLabel = "";
+
     // --- Live meeting URL for join command ---
     private string _liveMeetingUrl = "";
 
@@ -161,6 +174,11 @@ public partial class HomeViewModel : BaseViewModel
 
             // Meetings
             await LoadMeetingsDataAsync();
+
+            // Mood
+            var mood = await _databaseService.GetMoodEntryAsync(DateTime.Today);
+            TodayMoodEmoji = mood?.MoodEmoji ?? "";
+            TodayMoodLabel = mood?.MoodLabel ?? "";
 
             // Check for uncelebrated chip — show celebration once
             var uncelebrated = await _chipService.CheckAndRecordNewChipAsync(SoberDays);
@@ -297,6 +315,22 @@ public partial class HomeViewModel : BaseViewModel
         {
             await Shell.Current.DisplayAlert("Erro", "Formato inválido. Use dd/MM/yyyy.", "OK");
         }
+    }
+
+    [RelayCommand]
+    private async Task SetMoodAsync(string emoji)
+    {
+        if (string.IsNullOrEmpty(emoji)) return;
+        var label = EmojiLabels.TryGetValue(emoji, out var l) ? l : "";
+        var entry = new MoodEntry
+        {
+            EntryDate = DateTime.Today,
+            MoodEmoji = emoji,
+            MoodLabel = label
+        };
+        await _databaseService.SaveMoodEntryAsync(entry);
+        TodayMoodEmoji = emoji;
+        TodayMoodLabel = label;
     }
 
     [RelayCommand]

@@ -1,16 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="456" height="456" viewBox="0 0 456 456" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <radialGradient id="bg" cx="40%" cy="32%" r="68%" gradientUnits="userSpaceOnUse" fx="183" fy="146">
-      <stop offset="0%" stop-color="#5EC8FF"/>
-      <stop offset="45%" stop-color="#1A80CC"/>
-      <stop offset="100%" stop-color="#082D6E"/>
-    </radialGradient>
-  </defs>
-  <circle cx="228" cy="228" r="228" fill="url(#bg)"/>
-  <circle cx="228" cy="228" r="222" fill="none" stroke="#7DD8FF" stroke-width="4" opacity="0.45"/>
-  <!-- Left leg: peak → bottom-left -->
-  <line x1="228" y1="80" x2="88" y2="372" stroke="#FFFFFF" stroke-width="60" stroke-linecap="round"/>
-  <!-- Checkmark (also reads as right side of A): mid-left → bottom-center → upper-right -->
-  <polyline points="145,298 210,418 405,180" stroke="#FFFFFF" stroke-width="60" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect width="456" height="456" fill="#1A80CC"/>
 </svg>

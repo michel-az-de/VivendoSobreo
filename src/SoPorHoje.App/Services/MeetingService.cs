@@ -59,7 +59,6 @@ public class MeetingService
     {
         var meetings = await _db.GetAllMeetingsAsync();
         var now = DateTime.Now;
-        var todayBit = 1 << (int)now.DayOfWeek;
         var dayNames = new[] { "Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado" };
 
         var groups = new List<MeetingGroup>();
@@ -78,7 +77,7 @@ public class MeetingService
             if (dayMeetings.Count == 0) continue;
 
             var label = offset == 0 ? $"Hoje — {dayNames[dayIndex]}" : dayNames[dayIndex];
-            groups.Add(new MeetingGroup(label, dayMeetings));
+            groups.Add(new MeetingGroup(label, dayIndex, dayMeetings));
         }
 
         return groups;
@@ -89,8 +88,12 @@ public class MeetingGroup : List<OnlineMeeting>
 {
     public string DayName { get; }
 
-    public MeetingGroup(string dayName, List<OnlineMeeting> meetings) : base(meetings)
+    /// <summary>0=Dom, 1=Seg ... 6=Sáb</summary>
+    public int DayIndex { get; }
+
+    public MeetingGroup(string dayName, int dayIndex, List<OnlineMeeting> meetings) : base(meetings)
     {
         DayName = dayName;
+        DayIndex = dayIndex;
     }
 }

@@ -1,4 +1,5 @@
 using Microsoft.Extensions.Logging;
+using Plugin.LocalNotification;
 using SoPorHoje.App.Services;
 using SoPorHoje.App.ViewModels;
 using SoPorHoje.App.Views;
@@ -12,6 +13,7 @@ public static class MauiProgram
         var builder = MauiApp.CreateBuilder();
         builder
             .UseMauiApp<App>()
+            .UseLocalNotification()
             .ConfigureFonts(fonts =>
             {
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -23,6 +25,8 @@ public static class MauiProgram
         builder.Services.AddSingleton<ChipService>();
         builder.Services.AddSingleton<MeetingService>();
         builder.Services.AddSingleton<LiteratureService>();
+        builder.Services.AddSingleton<IQuoteEngine, QuoteEngineService>();
+        builder.Services.AddSingleton<NotificationService>();
 
         // ViewModels
         builder.Services.AddTransient<OnboardingViewModel>();

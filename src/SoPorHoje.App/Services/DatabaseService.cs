@@ -37,6 +37,7 @@ public class DatabaseService
             await _db.CreateTableAsync<ChipEarnedEvent>();
             await _db.CreateTableAsync<OnlineMeeting>();
             await _db.CreateTableAsync<LiteratureText>();
+            await _db.CreateTableAsync<MoodEntry>();
 
             await SeedMeetingsAsync();
             await SeedReflectionsAsync();
@@ -134,6 +135,42 @@ public class DatabaseService
             await _db!.InsertAsync(chipEvent);
         else
             await _db!.UpdateAsync(chipEvent);
+    }
+
+    // --- MoodEntry ---
+    public async Task SaveMoodEntryAsync(MoodEntry entry)
+    {
+        await InitAsync();
+        entry.EntryDate = entry.EntryDate.Date; // normalise to midnight
+        var existing = await _db!.Table<MoodEntry>()
+            .Where(m => m.EntryDate == entry.EntryDate)
+            .FirstOrDefaultAsync();
+        if (existing is not null)
+        {
+            existing.MoodEmoji = entry.MoodEmoji;
+            existing.MoodLabel = entry.MoodLabel;
+            await _db.UpdateAsync(existing);
+        }
+        else
+        {
+            await _db.InsertAsync(entry);
+        }
+    }
+
+    public async Task<MoodEntry?> GetMoodEntryAsync(DateTime date)
+    {
+        await InitAsync();
+        var d = date.Date;
+        return await _db!.Table<MoodEntry>()
+            .Where(m => m.EntryDate == d)
+            .FirstOrDefaultAsync();
+    }
+
+    // --- DailyReflection (all) ---
+    public async Task<List<DailyReflection>> GetAllReflectionsAsync()
+    {
+        await InitAsync();
+        return await _db!.Table<DailyReflection>().ToListAsync();
     }
 
     // --- OnlineMeeting ---

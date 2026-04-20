@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="456" height="456" viewBox="0 0 456 456" xmlns="http://www.w3.org/2000/svg">
-  <!-- Left leg: peak → bottom-left -->
-  <line x1="228" y1="80" x2="88" y2="372" stroke="#FFFFFF" stroke-width="60" stroke-linecap="round"/>
-  <!-- Checkmark (also reads as right side of A): mid-left → bottom-center → upper-right -->
-  <polyline points="145,298 210,418 405,180" stroke="#FFFFFF" stroke-width="60" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Safe zone: ~66% of 456 = ~300px centered at 228,228 -->
+  <!-- Left leg of A: top-center (228,78) to bottom-left (120,348) -->
+  <line x1="228" y1="78" x2="120" y2="348" stroke="#FFFFFF" stroke-width="52" stroke-linecap="round"/>
+  <!-- Check / right side: mid-left (148,278) to bottom-center (214,388) to upper-right (388,168) -->
+  <polyline points="148,278 214,388 388,168" stroke="#FFFFFF" stroke-width="52" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
 </svg>

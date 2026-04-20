@@ -341,7 +341,159 @@
                 </HorizontalStackLayout>
             </Border>
 
-            <!-- i) Footer -->
+            <!-- i) Como você está hoje? — diário de humor -->
+            <Border Stroke="#1D2C3C" StrokeThickness="1"
+                    BackgroundColor="#131D28" Padding="16,14"
+                    Margin="16,0,16,10"
+                    StrokeShape="RoundRectangle 16,16,16,16">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="COMO VOCÊ ESTÁ HOJE?"
+                           FontSize="11" FontAttributes="Bold"
+                           TextColor="#3A8AC5" CharacterSpacing="1" />
+                    <Grid ColumnDefinitions="*,*,*,*,*,*" ColumnSpacing="4">
+                        <!-- 😊 Bem -->
+                        <Border Grid.Column="0" Padding="0" StrokeThickness="2"
+                                StrokeShape="RoundRectangle 12">
+                            <Border.Triggers>
+                                <DataTrigger TargetType="Border" Binding="{Binding TodayMoodEmoji}" Value="😊">
+                                    <Setter Property="Stroke" Value="#3A8AC5" />
+                                    <Setter Property="BackgroundColor" Value="#0E1E2C" />
+                                </DataTrigger>
+                                <DataTrigger TargetType="Border" Binding="{Binding TodayMoodEmoji}" Value="">
+                                    <Setter Property="Stroke" Value="#1D2C3C" />
+                                    <Setter Property="BackgroundColor" Value="Transparent" />
+                                </DataTrigger>
+                            </Border.Triggers>
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding SetMoodCommand}" CommandParameter="😊" />
+                            </Border.GestureRecognizers>
+                            <VerticalStackLayout Spacing="2" Padding="4,6" HorizontalOptions="Center">
+                                <Label Text="😊" FontSize="24" HorizontalTextAlignment="Center" />
+                                <Label Text="Bem" FontSize="9" TextColor="#8A9AAE" HorizontalTextAlignment="Center" />
+                            </VerticalStackLayout>
+                        </Border>
+                        <!-- 😐 Ok -->
+                        <Border Grid.Column="1" Padding="0" StrokeThickness="2"
+                                StrokeShape="RoundRectangle 12">
+                            <Border.Triggers>
+                                <DataTrigger TargetType="Border" Binding="{Binding TodayMoodEmoji}" Value="😐">
+                                    <Setter Property="Stroke" Value="#3A8AC5" />
+                                    <Setter Property="BackgroundColor" Value="#0E1E2C" />
+                                </DataTrigger>
+                                <DataTrigger TargetType="Border" Binding="{Binding TodayMoodEmoji}" Value="">
+                                    <Setter Property="Stroke" Value="#1D2C3C" />
+                                    <Setter Property="BackgroundColor" Value="Transparent" />
+                                </DataTrigger>
+                            </Border.Triggers>
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding SetMoodCommand}" CommandParameter="😐" />
+                            </Border.GestureRecognizers>
+                            <VerticalStackLayout Spacing="2" Padding="4,6" HorizontalOptions="Center">
+                                <Label Text="😐" FontSize="24" HorizontalTextAlignment="Center" />
+                                <Label Text="Ok" FontSize="9" TextColor="#8A9AAE" HorizontalTextAlignment="Center" />
+                            </VerticalStackLayout>
+                        </Border>
+                        <!-- 😔 Baixo -->
+                        <Border Grid.Column="2" Padding="0" StrokeThickness="2"
+                                StrokeShape="RoundRectangle 12">
+                            <Border.Triggers>
+                                <DataTrigger TargetType="Border" Binding="{Binding TodayMoodEmoji}" Value="😔">
+                                    <Setter Property="Stroke" Value="#3A8AC5" />
+                                    <Setter Property="BackgroundColor" Value="#0E1E2C" />
+                                </DataTrigger>
+                                <DataTrigger TargetType="Border" Binding="{Binding TodayMoodEmoji}" Value="">
+                                    <Setter Property="Stroke" Value="#1D2C3C" />
+                                    <Setter Property="BackgroundColor" Value="Transparent" />
+                                </DataTrigger>
+                            </Border.Triggers>
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding SetMoodCommand}" CommandParameter="😔" />
+                            </Border.GestureRecognizers>
+                            <VerticalStackLayout Spacing="2" Padding="4,6" HorizontalOptions="Center">
+                                <Label Text="😔" FontSize="24" HorizontalTextAlignment="Center" />
+                                <Label Text="Baixo" FontSize="9" TextColor="#8A9AAE" HorizontalTextAlignment="Center" />
+                            </VerticalStackLayout>
+                        </Border>
+                        <!-- 😤 Irritado -->
+                        <Border Grid.Column="3" Padding="0" StrokeThickness="2"
+                                StrokeShape="RoundRectangle 12">
+                            <Border.Triggers>
+                                <DataTrigger TargetType="Border" Binding="{Binding TodayMoodEmoji}" Value="😤">
+                                    <Setter Property="Stroke" Value="#3A8AC5" />
+                                    <Setter Property="BackgroundColor" Value="#0E1E2C" />
+                                </DataTrigger>
+                                <DataTrigger TargetType="Border" Binding="{Binding TodayMoodEmoji}" Value="">
+                                    <Setter Property="Stroke" Value="#1D2C3C" />
+                                    <Setter Property="BackgroundColor" Value="Transparent" />
+                                </DataTrigger>
+                            </Border.Triggers>
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding SetMoodCommand}" CommandParameter="😤" />
+                            </Border.GestureRecognizers>
+                            <VerticalStackLayout Spacing="2" Padding="4,6" HorizontalOptions="Center">
+                                <Label Text="😤" FontSize="24" HorizontalTextAlignment="Center" />
+                                <Label Text="Irritado" FontSize="9" TextColor="#8A9AAE" HorizontalTextAlignment="Center" />
+                            </VerticalStackLayout>
+                        </Border>
+                        <!-- 😰 Ansioso -->
+                        <Border Grid.Column="4" Padding="0" StrokeThickness="2"
+                                StrokeShape="RoundRectangle 12">
+                            <Border.Triggers>
+                                <DataTrigger TargetType="Border" Binding="{Binding TodayMoodEmoji}" Value="😰">
+                                    <Setter Property="Stroke" Value="#3A8AC5" />
+                                    <Setter Property="BackgroundColor" Value="#0E1E2C" />
+                                </DataTrigger>
+                                <DataTrigger TargetType="Border" Binding="{Binding TodayMoodEmoji}" Value="">
+                                    <Setter Property="Stroke" Value="#1D2C3C" />
+                                    <Setter Property="BackgroundColor" Value="Transparent" />
+                                </DataTrigger>
+                            </Border.Triggers>
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding SetMoodCommand}" CommandParameter="😰" />
+                            </Border.GestureRecognizers>
+                            <VerticalStackLayout Spacing="2" Padding="4,6" HorizontalOptions="Center">
+                                <Label Text="😰" FontSize="24" HorizontalTextAlignment="Center" />
+                                <Label Text="Ansioso" FontSize="9" TextColor="#8A9AAE" HorizontalTextAlignment="Center" />
+                            </VerticalStackLayout>
+                        </Border>
+                        <!-- 🙏 Grato -->
+                        <Border Grid.Column="5" Padding="0" StrokeThickness="2"
+                                StrokeShape="RoundRectangle 12">
+                            <Border.Triggers>
+                                <DataTrigger TargetType="Border" Binding="{Binding TodayMoodEmoji}" Value="🙏">
+                                    <Setter Property="Stroke" Value="#3A8AC5" />
+                                    <Setter Property="BackgroundColor" Value="#0E1E2C" />
+                                </DataTrigger>
+                                <DataTrigger TargetType="Border" Binding="{Binding TodayMoodEmoji}" Value="">
+                                    <Setter Property="Stroke" Value="#1D2C3C" />
+                                    <Setter Property="BackgroundColor" Value="Transparent" />
+                                </DataTrigger>
+                            </Border.Triggers>
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding SetMoodCommand}" CommandParameter="🙏" />
+                            </Border.GestureRecognizers>
+                            <VerticalStackLayout Spacing="2" Padding="4,6" HorizontalOptions="Center">
+                                <Label Text="🙏" FontSize="24" HorizontalTextAlignment="Center" />
+                                <Label Text="Grato" FontSize="9" TextColor="#8A9AAE" HorizontalTextAlignment="Center" />
+                            </VerticalStackLayout>
+                        </Border>
+                    </Grid>
+                    <!-- Humor salvo -->
+                    <Label IsVisible="{Binding TodayMoodEmoji, Converter={StaticResource StringToBoolConverter}}"
+                           FontSize="12" TextColor="#49596B" HorizontalTextAlignment="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{Binding TodayMoodEmoji}" />
+                                <Span Text=" " />
+                                <Span Text="{Binding TodayMoodLabel}" TextColor="#8A9AAE" />
+                                <Span Text=" · registrado hoje" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- j) Footer -->
             <Label Text="EVITE O PRIMEIRO GOLE"
                    FontSize="11" TextColor="#49596B"
                    HorizontalTextAlignment="Center"

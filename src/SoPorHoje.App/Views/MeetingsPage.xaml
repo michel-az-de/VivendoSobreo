@@ -16,10 +16,10 @@
         <conv:InverseBoolConverter x:Key="InverseBoolConverter" />
     </ContentPage.Resources>
 
-    <Grid RowDefinitions="Auto,*">
+    <Grid RowDefinitions="Auto,Auto,*">
 
         <!-- Header -->
-        <VerticalStackLayout Grid.Row="0" Margin="16,12,16,8" Spacing="2">
+        <VerticalStackLayout Grid.Row="0" Margin="16,12,16,6" Spacing="2">
             <Label Text="Reuniões Online"
                    FontSize="22" FontAttributes="Bold"
                    TextColor="#E2E8F0" />
@@ -35,11 +35,54 @@
             </Label>
         </VerticalStackLayout>
 
+        <!-- Day filter chips -->
+        <ScrollView Grid.Row="1"
+                    Orientation="Horizontal"
+                    HorizontalScrollBarVisibility="Never"
+                    Margin="0,0,0,8">
+            <HorizontalStackLayout Spacing="8" Padding="16,4"
+                                   BindableLayout.ItemsSource="{Binding DayFilters}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="models:DayFilter">
+                        <Border Padding="12,6"
+                                StrokeShape="RoundRectangle 20">
+                            <Border.Triggers>
+                                <DataTrigger TargetType="Border" Binding="{Binding IsSelected}" Value="True">
+                                    <Setter Property="BackgroundColor" Value="#3A8AC5" />
+                                    <Setter Property="Stroke" Value="#3A8AC5" />
+                                </DataTrigger>
+                                <DataTrigger TargetType="Border" Binding="{Binding IsSelected}" Value="False">
+                                    <Setter Property="BackgroundColor" Value="#131D28" />
+                                    <Setter Property="Stroke" Value="#1D2C3C" />
+                                </DataTrigger>
+                            </Border.Triggers>
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.SelectDayFilterCommand}"
+                                    CommandParameter="{Binding .}" />
+                            </Border.GestureRecognizers>
+                            <Label Text="{Binding Label}"
+                                   FontSize="12" FontAttributes="Bold">
+                                <Label.Triggers>
+                                    <DataTrigger TargetType="Label" Binding="{Binding IsSelected}" Value="True">
+                                        <Setter Property="TextColor" Value="White" />
+                                    </DataTrigger>
+                                    <DataTrigger TargetType="Label" Binding="{Binding IsSelected}" Value="False">
+                                        <Setter Property="TextColor" Value="#8A9AAE" />
+                                    </DataTrigger>
+                                </Label.Triggers>
+                            </Label>
+                        </Border>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </HorizontalStackLayout>
+        </ScrollView>
+
         <!-- Meetings list -->
-        <CollectionView Grid.Row="1"
-                         ItemsSource="{Binding MeetingGroups}"
-                         IsGrouped="True"
-                         IsVisible="{Binding HasMeetings}">
+        <CollectionView Grid.Row="2"
+                        ItemsSource="{Binding MeetingGroups}"
+                        IsGrouped="True"
+                        IsVisible="{Binding HasMeetings}">
             <CollectionView.GroupHeaderTemplate>
                 <DataTemplate x:DataType="svc:MeetingGroup">
                     <Label Text="{Binding DayName}"
@@ -109,11 +152,11 @@
         </CollectionView>
 
         <!-- Empty state -->
-        <VerticalStackLayout Grid.Row="1"
+        <VerticalStackLayout Grid.Row="2"
                               IsVisible="{Binding HasMeetings, Converter={StaticResource InverseBoolConverter}}"
                               VerticalOptions="Center" HorizontalOptions="Center"
                               Spacing="8" Padding="32">
-            <Label Text="Nenhuma reunião cadastrada."
+            <Label Text="Nenhuma reunião neste dia."
                    FontSize="16" TextColor="#8A9AAE"
                    HorizontalTextAlignment="Center" />
         </VerticalStackLayout>
